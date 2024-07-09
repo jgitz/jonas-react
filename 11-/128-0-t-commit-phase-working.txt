@@ -1,0 +1,31 @@
+... at the END OF RENDER PHASE... react produces a MODIFIED FIBER TREE (.. aka WORK IN PROGRESS TREE)... AND a LIST OF EFFECTS/DOM-UPDATES 
+
+- COMMIT PHASE: 
+
+  - DOM GETS UPDATED according to the LIST OF EFFECTS/DOM-UPDATES which is passed in by the RENDER PHASE 
+
+  - COMMITING PHASE is SYNCHRONOUS.... i.e DOM UPDATES are updated in ONE GO... WITHOUT ANY INTERRUPTIONS... so DOM NEVER SHOWS PARTIAL RENDERING 
+
+  - after COMPLETION OF WORKING PHASE.... WORK IN PROGRESS TREE BECOMES THE CURRENT FIBER TREE for the NEXT RENDER CYCLE
+
+  ** at the END of COMMIT PHASE.... the BROWSER PAINTS the UI and we can see it
+
+  **** keep in mind that 
+
+    - BROWSER PAINTING is done by BROWSER 
+
+    - RENDER PHASE is done by REACT LIBRARY 
+
+    - COMMIT PHASE is DONE BY REACT-DOM LIBRARY and NOT REACT
+
+      ** COMMIT PHASE depends on the platform... i.e    
+
+        - if you want to render ui in BROWSER...commit phase uses REACT-DOM LIBRARY 
+
+        - if you want to render ui in MOBILE.... then REACT-NATIVE LIBRARY is used
+
+        - to make videos... we use PACKAGE CALLED REMOTION  
+
+        ** we can make word file, pdf etc using DIFFERENT RENDERER LIBRARIES
+
+        **** this is the reason why we IMPORT REACT-DOM inside the index.js file FOR WEB APPS

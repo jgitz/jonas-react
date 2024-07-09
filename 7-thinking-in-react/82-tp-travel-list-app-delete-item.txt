@@ -1,0 +1,13 @@
+**** if you want to pass props from parent to child through deeper LEVELS of COMPONENTS.... you need to pass the prop through EVERY INTERMEDIATE COMPONENTS...
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+....no we need to delete item on clicking cross button.... cross button is on ITEM COMPONENT.... ITEM COMPONENT is on PACKING LIST COMPONENT..... packing list component is on APP COMPONENT....
+
+... ITEMS ARRAY STATE is on APP COMPONENT..... we need to delete the ITEM from this array.... so we need to write HANDLE DELETE FUNCTION on APP COMPONENT... and pass it as ON-DELETE PROP through PACKING LIST COMPONENT and ITEM COMPONENT... 
+
+.... HANDLE-DELETE-FUNCTION uses ARRAY FILTER METHOD to delete element 
+
+.... use the ON-DELETE PROP on ON-CLICK attribute on the BUTTON ELEMENT of the item component... 
+
+**** when using ON-DELETE on ON-CLICK.... make sure it is WRAPPED IN ARROW FUNCTION 

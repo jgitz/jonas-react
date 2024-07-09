@@ -1,0 +1,5 @@
+...... use USE-EFFECT and ASYNC AWAIT to FETCH DATA BY SEARCHING for a MOVIE and set the MOVIES state with the data using SET-MOVIES 
+
+** import USE-EFFECT from react 
+
+** replace the INITIAL STATE of MOVIES and WATCHED STATE to EMPTY ARRAY as we NO LONGER USE the STATIC DATA

@@ -1,0 +1,22 @@
+.... most commonly used scenario of USE-EFFECT is to use it to FETCH data from a URL.... a while back we used FETCH method with .then method to get back data from the url endpoint.... 
+
+.... NOW instead of .THEN CHAIN we use ASYNC AWAIT to handle FETCH calls to an END POINT.... 
+
+.... in REACT APP'S FETCH calls are COMMONLY given inside USE-EFFECT.... but THE EFFECT FUNCTION CANNOT BE MADE ASYNC (the function must be made ASYNC inorder to use AWAIT inside the function).... 
+
+... to overcome this we do the following step....
+
+1) define the USE-EFFECT HOOK.... with a NORMAL EFFECT FUNCTION 
+
+2) INSIDE the EFFECT-FUNCTION... CREATE ANOTHER FUNCTION and MAKE IT ASYNC 
+
+3) write the FETCH CALL in the SECOND ASYNC function 
+
+4) OUTSIDE THE ASYNC FUNCTION (..I.E INSIDE the EFFECT FUNCTION ).... INVOKE the ASYNC FUNCTION 
+
+
+
+***** always give AWAIT to BOTH const RES and const DATA......
+
+***** NEVER CONSOLE.LOG any STATE VARIABLES... just AFTER SETTING IT with SET-STATE.... SET-STATE is ASYNCHRONOUS.... hence ony THE STALE-STATE/INITIAL STATE VALUE will be consoled.... always CONSOLE for CONST DATA VARIABLE to know if your API CALL WORKED 
+

@@ -1,0 +1,20 @@
+- onClick: takes a function as value and triggers the function  when the HTML TAG is clicked 
+
+- onSubmit: takes a function as value and triggers the function when we click ENTER BUTTON after filling the form 
+
+- onChange: if you need to do some operations when VALUE of an JSX element like <input> CHANGES.... we use "onChange" attribute inside the HTML TAG 
+
+  - syntax eg: 
+
+    <input onChange={(e) => {
+      codes
+    }}>
+
+    ** the handler function assigned to ON CHANGE ATTRIBUTE always takes CHANGE EVENT (e) as argument
+
+- onMouseEnter : takes function as value and triggers the function when the MOUSE ENTERS the HTML ELEMENT
+
+- onMouseLeave : takes function as value and triggers the function when the MOUSE LEAVES the HTML ELEMENT 
+
+
+**** ALL EVENTS CAN ONLY?? be added to HTML ELEMENT TAGS and  WON'T WORK on COMPONENT TAGS 

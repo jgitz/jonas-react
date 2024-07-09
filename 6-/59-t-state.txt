@@ -1,0 +1,15 @@
+..... a UI is formed by COMBINING several COMPONENT VIEWS....
+
+- STATE VARIABLE/COMPONENT STATE: allows you to STORE DATA INSIDE A COMPONENT which is required to be PERSISTED throughout the LIFECYCLE of the application.
+
+  ** we RENDER COMPONENT VIEW based on CHANGE of data in the state variable
+
+  ** when the DATA in the STATE VARIABLE gets UPDATED.... the COMPONENT VIEW RE-RENDERS... this is the BEHAVIOUR of REACT 
+
+  ** so STATE VARIABLE HELPS to PERSIST LOCAL STATE VARIABLE DATA between RERENDERS 
+
+- FUNCTIONS of STATE VARIABLE 
+
+  1) UPDATE COMPONENT VIEW by RE-RENDERING it 
+
+  2) PERSIST LOCAL COMPONENT DATA between RENDERS   

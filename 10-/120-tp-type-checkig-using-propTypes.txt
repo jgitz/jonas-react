@@ -1,0 +1,42 @@
+... in an API ENDPOINT... it should always need to know whether the DATA-TYPE of the INCOMING DATA is same as the DATA-TYPE the COMPONENT FUNCTION EXPECTS....
+
+.... i.e THE DATA-TYPE of the PROPS VALUE send using COMPONENT TAG should be EQUAL to the DATA-TYPE of the DESTRUCTURED PROP PARAMETERS....
+
+... TYPE CHECKING in REACT can be IMPLEMENTED in TWO WAYS 
+
+  1) using TYPE SCRIPT (LATEST PREFERRED METHOD)
+
+  2) using IN-BUILT PROP-TYPES PACKAGE PROVIDED BY CREATE-REACT-APP (.. we'll just show a demo of its use and that's it....)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... to use PropTypes for type validation.... use the following steps: 
+
+- inside the COMPONENT FUNCTION FILE 
+
+  - import PropTypes package using the line 
+
+    import PropTypes from "prop-types";
+
+      **** NOTE "P" of PropTypes is UPPER-CASE 
+
+  - to set the TYPES of the PROPS in the component.... before the COMPONENT DEFINITION (i.e before the export default line).... add the following 
+
+    <Component Name>.propTypes = {
+
+      <prop1> = PropTypes.number,
+      <prop2> = PropTypes.<number>.isRequired,
+      <prop3> = PropTypes.string,
+      <prop4> = PropTypes.array,
+      <prop5> = PropTypes.func,
+      <prop6> = PropTypes.bool,
+      <prop7> = PropTypes.object
+
+
+    }
+
+    ***** check the LETTER CASING of PROP-TYPES.... in <component name>.propTypes.... 'p' is LOWER CASE.... but in <prop> = PropTypes.<number>.... 'P' is UPPER CASE 
+
+** now if the COMPONENT FUNCTION INTERCEPTS a MISMATCHED DATA-TYPE.... it throws ERROR in the CONSOLE
+
+** TYPESCRIPT is the PREFERRED WAY 

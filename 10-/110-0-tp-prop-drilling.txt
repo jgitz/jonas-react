@@ -1,0 +1,9 @@
+- PROPS DRILLING: is process of passing PROPS from a PARENT COMPONENT to a CHILD COMPONENT that is NESTED at MULTIPLE LEVELS inside parent comopnent
+
+  ** the PROPS is passed through all the INTERMEDIATE COMPONENTS that is between PARENT AND CHILD 
+
+  ** PROPS DRILLING is not desirable 
+
+>>>>>>> p>>>>>> 
+
+- through props drilling PASS MOVIES state from the APP COMPONENT to MOVIE-BOX COMPONENT and NUM-RESULTS COMPONENTS 

@@ -1,0 +1,119 @@
+- RENDER PHASE summary
+
+  - whenever there is a state change in any COMPONENTS... the react SCANS ENTIRE COMPONENT TREE and SELECTS all the COMPONENT INSTANCES that TRIGGERED STATE CHANGE 
+
+  - the CORRESPONDING COMPONENT FUNCTIONS are CALLED/INVOKED and new updated JSX of these components are CONVERTED into REACT ELEMENTS (using React.createElement())
+
+  - these UPDATE REACT ELEMENTS are used to CREATE NEW VIRTUAL DOM
+
+    - what is VIRTUAL DOM? 
+
+      - .. during INITIAL RENDER... react takes the entire COMPONENT TREE and TRANSFORMS it into a REACT ELEMENT TREE... this TREE of REACT ELEMENT is known as VIRTUAL DOM..
+
+      ** VIRTUAL DOM DEFINITION: is a TREE of ALL REACT ELEMENTS created form ALL the INSTANCES in the COMPONENT TREE
+
+      ** it's EASIER to create REACT ELEMENT TREE (..aks VIRTUAL DOM) becuase.... REAT ELEMENTS are SIMPLE JS OBJECTS... hence we can easily create MULTIPLE VIRTUAL DOM'S
+
+      **** VIRTUAL DOM and SHADOW DOM?? is DIFFERENT
+
+  - so when a COMPONENT HAS STATE CHANGE.... it enters into RENDER PHASE and creates a NEW VIRTUAL DOM with the UPDATES 
+
+    **** its IMPORTANT to note that in the RENDER PHASE.... ALL THE CHILD COMPONENTS of the TRIGGER COMPONENT and every NESTED CHILD at VARIOUS LEVELs will ALSO GET RE-RENDERED.... EVEN if there is NO STATE/PROP UPDATE in these child components...
+
+  - RECONCILIATION:  the new VIRTUAL DOM will undergoes RECONCILIATION ?? using REACT RECONCILER CALLED FIBER 
+
+    .... it does so by using CURRENT FIBER TREE?? which was CREATED BEFORE the STATE UPDATE in the COMPONENT... 
+    
+    ....and the NEW VIRTUAL DOM is RECONCILED with the CURRENT FIBER TREE?? and RESULTS in the CREATION OF NEW UPDATED FIBER TREE??
+
+    .... this NEW UPDATED FIBER TREE is then USED to WRITE to the DOM 
+
+    - RECONCILIATION DEFINITION: is a process that decides which DOM ELEMENTs are needed to be INSERTED/DELETED/UPDATED based on the LATEST STATE CHANGE
+
+      - DIFFING: is a PROCESS of COMPARING NEW REACT ELEMENT TREE (VIRTUAL DOM) with CURRENT FIBER TREE to look for CHANGES.. 
+
+        - diffing process is an important part of RECONCILIATION  
+
+      - the result of RECONCILIATION is a list of DOM operations to UPDATE the CURRENT DOM  
+
+    - RECONCILER: is the HEART/ENGINE of the REACT
+    that tells REACT about how the NEXT SNAPSHOT of the UI should look like based on the latest STATE CHANGES 
+
+      - current RECONCILER in REACT is known as FIBER and it creates FIBER TREE from REACT ELEMENTS 
+
+        - FIBER tree is an INTERNAL TREE which has FIBER for each COMPONENT INSTANCES and DOM ELEMENTS 
+
+        - FIBER TREE is MUTABLE... i.e SAME FIBER TREE is MODIFIED according to state changes 
+
+        - FIBER TREE is a LINKED LIST STRUCTURE.... i.e EACH FIRST-CHILD is connected to the PARENT and other SIBLINGS are CONNECTED to the PREVIOUS SIBLING
+
+        - BOTH REACT ELEMENT TREE (VIRTUAL DOM) as well as FIBER TREE displays REGULAR HTML TAGS such as H3, BUTTON etc in their tree apart from the REACT COMPONENT ELEMENTS.... so BOTH TREEs are a REPRESENTATION of DOM STRUCTURE of the UI
+
+        - unlike REACT ELEMENT TREE (VIRTUAL-DOM).... FIBER TREE is NOT RE-CREATED on EVERY RENDER..... instead it MODIFIES the same FIBER TREE 
+
+        - FIBER TREE is used to track 
+
+          - CURRENT STATE 
+          
+          - PROPS 
+
+          - SIDE EFFECTS
+
+          - LIST OF USED HOOKS 
+
+          - etc 
+
+        - ACTUAL STATE and PROPS of the COMPONENTS are INTERNALLY STORED in the FIBERS of the FIBER TREE
+
+        - each FIBER also contains a QUEUE OF WORK to do.... SUCH AS:
+
+          - updating  STATES, REFS 
+
+          - RUNNING SIDE EFFECTS 
+
+          - PERFORMING DOM UPDATES 
+
+          - etc
+
+          ** the above works ARE DONE ASYNCHRONOUSLY by the RECONCILER.... hence JS ENGINE is not blocked in case of RENDER with LARGE UPDATES (..i.e more work)
+
+          ** this ASYNCHRONOUS NATURE enables REACT VERSION 18 to implement CONCURRENT FEATURES LIKE SUSPENSE?? OR TRANSITIONS??
+
+
+
+        ** FIBER TREE WORKING: after inital render.... REACT ELEMENT TREE (VIRTUAL DOM) is FORMED.... after that a FIBER TREE is MADE FROM the REACT ELEMENT TREE.... for any COMPONENT STATE/PROP UPDATE..... the FIBER TREE is MUTATED to reflect the changes (..MODIFIED FIBER TREE called WORK IN PROGRESS FIBER TREE) and CREATES A LIST OF EFFECTS.... this LIST of EFFECTS is used in COMMIT PHASE to RENDER UI in the BROWSER via appling DOM CHANGES
+      
+    
+    ** so in SUMMARY... RENDERING PHASE produces an UPDATED/MODIFIED FIBER TREE (aka.. WORK IN PROGRESS FIBER TREE) with a LIST of EFFECTs/DOM-UPDATES to pass on to the COMMIT PHASE  
+
+    ****  RECONCILIATION never PRODUCES a VISUAL OUTPUT/GRAPHICS RENDER  in the BROWSER..
+       
+
+>>>>>>>>>
+
+- Why can't we directly write state changes on the REAL DOM instead of VIRTUAL DOM ?
+
+  - writing to REAL DOM is an INEFFICIENT SLOW PROCESS 
+
+  - VIRTUAL DOM allows to only make changes to the REACT ELEMENT that has STATE/PROP CHANGE while RE-USING other REACT ELEMENTS of the tree which has NO CHANGE 
+
+>>>>>>> explanation of RECONCILIATION WORKING using the EXAMPLE SCENARIO displayed by the NEXT IMAGE FILE >>>>>>>> 
+
+.... in the example.... the APP COMPONENT has a STATE called SHOW-MODEL.... when it is TRUE.... the MODAL COMPONENT is diplayed with BTN COMPONENT (**** NOT BUTTON TAG) having TEXT "RATE"... when it is FALSE.... the MODEL COMPONENT IS HIDDEN with BTN COMPONENT updated with TEXT "HIDE"
+
+
+- in initial render REACT ELEMENT TREE (VIRTUAL DOM) is created for the ENTIRE APP with all COMPONENTS and HTML TAGS used... and FIBER TREE is also CREATED based on the REACT ELEMENT TREE....
+
+- when there is a state change in APP COMPONENT... eg.. here SHOW-MODEL STATE is changed to FALSE 
+
+  - RENDER PHASE is triggered AND NEW VIRTUAL DOM is created which ONLY SHOWS APP component and ITS CHILDREN as SHOW-MODEL STATE is part of APP COMPONENT 
+
+  - now RECONCILIATION and DIFFING PROCESS takes place by COMPARING NEW VIRTUAL DOM and the CURRENT FIBER TREE to CREATE a NEW FIBER TREE 
+
+  - the new FIBER TREE will generate LIST OF EFFECTS which proposes.. the following works 
+
+    - UPDATION of TEXT in BTN COMPONENT 
+
+    - DELETION of MODEL COMPONENT and its CHILDREN 
+
+  ** this LIST OF EFFECTS is used to make UI RENDERING in BROWSER via DOM UPDATES in the COMMIT PHASE 

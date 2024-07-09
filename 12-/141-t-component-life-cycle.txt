@@ -1,0 +1,20 @@
+.... each COMPONENT INSTANCE has a LIFE-CYCLE where it go-through MANY PHASES.... there are THREE PHASES 
+
+1) MOUNT/RENDER PHASE: is the phase where a component INSTANCE is RENDERED for the FIRST TIME with its PROPS and STATES 
+
+2) RE-RENDER PHASE: is the phase where a component instance RE-RENDERS due to any ONE of the BELOW REASONS: 
+
+  - STATE CHANGE 
+
+  - PROPS CHANGE 
+
+  - PARENT COMPONENT RE-RENDERING 
+
+  - CONTEXT CHANGE?? (LATER..)
+
+3) UNMOUNT PHASE: is the phase where the component INSTANCE is DESTROYED and REMOVED 
+
+  - STATES and PROPS are also destroyed 
+
+
+**** NOT ALL COMPONENTS are made to go through RE-RENDER PHASE..... some components are designed to MOUNT and immediately UNMOUNT

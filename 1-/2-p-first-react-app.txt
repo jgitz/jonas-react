@@ -1,0 +1,52 @@
+.... before we dive into the details of react.... we are going to create a demo react app....
+
+- GOALS:
+
+  - to create a react app to show ADVICES/QUOTES obtained from the api link given below 
+
+     	https://api.adviceslip.com/advice
+
+      ** using FETCH, ASYNC, AWAIT 
+      ** use .json()
+
+  - the page should have a BUTTON.... which when clicked will display NEW ADVICES 
+
+  - at the bottom.... the page should show the COUNT of CLICKS on the BUTTON 
+
+  - the page should load with an ADVICE (..using useEffect hook )
+
+  - on the SAME PAGE.... display ANOTHER COMPONENT to separately display the COUNT (use props)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- use VITE to set the server 
+
+  - do :: npm create vite@latest ::
+
+  - goto project folder and run 
+
+    - :: npm i ::
+
+    - to run react app in the browser do 
+
+      :: npm run dev :: 
+
+      ** click on the server link 
+
+- inside project-folder/src 
+
+  - clean up all codes inside APP.TSX 
+
+  - delete
+
+    - index.css (... also inside main.tsx... remove the import line for index.css)
+    - app.css 
+
+    ** as we are not using STYLING in this project 
+
+- inside APP.TSX 
+
+  - SETTING APP COMPONENT: create DEFAULT EXPORT FUNCTION named APP with a RETURN 
+
+
+  

@@ -1,0 +1,9 @@
+..... in this section we learn concepts by building a MOVIE APP.... this APP USES an api and it gives the following functionalities 
+
+  - search for movies using SEARCH BAR
+
+  - see movie details 
+
+  - rate a movie 
+
+  - add/remove movie to a ALREADY WATCHED LIST

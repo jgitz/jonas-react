@@ -1,0 +1,34 @@
+.... the summary of the work that takes place for rendering a component goes like this 
+
+  COMPONENT -->
+  COMPONENT INSTANCE --> 
+  REACT ELEMENT (made from React.createElement()) -->
+  DOM HTML ELEMENT  -->
+  UI is displayed on the browser 
+
+.... but internally there are different phases that happens inorder to display the components on the screen.... the different phases are 
+
+1) RENDER TRIGGERING PHASE: is the phase that gets triggered wherever there is a STATE CHANGE/UPDATE 
+
+  - RENDER TRIGGERING in react application in the following TWO situations 
+
+    - INITIAL LOADING of the APPLICATION 
+
+    - when there is UPDATION of the STATE in any of the COMPONENT  
+
+  ** RENDER TRIGGERING happens to the ENTIRE REACT APP ??... i.e react SCANS EVERY COMPONENT to find which component triggered a state change and MAKE those TRIGGER CAUSING COMPONENT to undergo RENDER PHASE 
+
+  ** RENDER PROCESS is NOT TRIGGERED IMMEDIATELY when there is a state change.... it is SCHEDULED for when JS ENGINE has FREE TIME..... there is also BATCHING of multiple SET-STATE calls 
+
+2) RENDER PHASE: is the phase where REACT CALLS the COMPONENT FUNCTION and figures out HOW DOM SHOULD be UPDATED..
+
+  ** here the JSX is converted to REACT ELEMENTS usng React.createElement()
+
+  **** keep in mind that.... REAL RENDERING of UI DOESN'T HAPPEN in this phase.... I.E VISUAL CHANGES happens in this phase
+
+3) COMMIT PHASE: is the phase where react actually writes/updates/delete new html elements in the DOM.... it uses the DATA from REACT ELEMENTS to WRITE HTML ELEMENTS in the DOM  
+
+4) BROWSER RENDERING: now the control is taken away from react and is transerred to the BROWSER to PAINT the UI according to HTML WRITTEN inside the DOM 
+
+
+

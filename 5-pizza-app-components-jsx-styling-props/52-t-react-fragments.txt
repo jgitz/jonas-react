@@ -1,0 +1,42 @@
+.... the return of a component function returns JSX CODES.....
+
+.... but THE COMPONENT RETURN should always have only ONE ROOT ELEMENT.... 
+
+.... using DIV as ROOT ELEMENT will have SIDE-EFFECTS in the UI DESIGN.... 
+
+... so the SOLUTION is to use REACT FRAGMENTS 
+
+- REACT FRAGMENTS: is a NAMELESS ELEMENT TAG that is commonly used as ROOT ELEMENT inside the RETURN to WRAP JSX CODES.... 
+
+  - SYNTAX 1: 
+
+    function component() {
+      return (
+        <>
+          JSX CODES 
+        </>
+      )
+    }
+
+      ** <></> is called the REACT FRAGMENTS
+
+  - SYNTAX 2: is used when we want to add ATTRIBUTES such as KEY(..for looping) to the react fragment elements
+
+
+
+    function component() {
+
+      return (
+
+        <React.Fragment key={<unique value>}>
+
+          JSX CODES
+        
+        </React.Fragment>
+
+      )
+    }
+
+    **** make sure you IMPORT React to use this in the component file 
+
+  ** REACT FRAGMENT ELEMENT is INVISIBLE in the DOM 

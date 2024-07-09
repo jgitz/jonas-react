@@ -1,0 +1,10 @@
+
+
+- DERIVED STATE: are NORMAL DATA VAIRABLES.. WHOSE values are CALCULATED from EXISTING STATES.... 
+
+  ** NEVER USE USE STATE hook to create MANY STATES... instead find if the states has RELATIONSHIP with existing states and use NORMAL CONST VARIABLES to calculate and store values 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... use DERIVED STATE METHOD to set UI of STATS variable with NUMBER OF PACKED ITEMS and VARIABLES 

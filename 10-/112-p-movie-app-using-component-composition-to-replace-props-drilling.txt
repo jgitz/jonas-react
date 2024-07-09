@@ -1,0 +1,5 @@
+- use component composition technique in NAVBAR COMPONENT TAG and NAVBAR COMPONENT FUNCTION to prevent props drilling of movies state
+
+- use component composition technique in main component to prevent props drilling of movies state 
+
+- implement component composition in LIST-BOX component to prevent props drilling of movies state

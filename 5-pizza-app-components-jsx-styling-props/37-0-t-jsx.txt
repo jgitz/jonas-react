@@ -1,0 +1,88 @@
+- JSX: is DECLARATIVE SYNTAX used to DESCRIBE the COMPONENT 
+
+  ** JSX is an EXTENSION of JS that allows us to EMBED JS, CSS and REACT COMPONENTS into HTML
+
+  ** FUNCTIONAL COMPONENT should ALWAYS return a BLOCK of JSX
+
+  ** JSX is converted to JS by tool named BABEL
+
+    for eg... each tag element written in JSX will be converted to React.createElement() function by BABEL in the backend
+
+  ** we can use REACT WITHOUT JSX using PURE REACT.... but that makes the code COMPLEX and UNREADABLE  
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- JSX RULES in REACT 
+
+  - the component function return uses () INSTEAD of {} to WRAP BLOCK of JSX CODE as the component function always return JSX
+
+  - js codes written inside HTML TAGS should be wrapped in {}
+
+    ** JSX CODES can also be added inside this {}
+
+    ***** inside {}.... JSX DON'T allow STATEMENTS like
+
+    - IF 
+    - ELSE
+    - FOR 
+    - SWITCH 
+
+      ** instead use TERNARY OPERATORS and ARRAY METHODS
+
+  - all SELF-CLOSING tags should be closed using / 
+
+    - for eg 
+
+      - <br/>
+      - <hr/>
+      - <input/>
+      - <img/>
+      - <link/>
+
+  - we can add JSX as VARIABLES... ANYWHERE inside the COMPONENT FUNCTION...
+
+    - for eg: 
+
+      conse heading = <h1>Helloo</h1>
+
+  - html FOR ATTRIBUTE (used to link associated tags using ID VALUE) is changed to "htmlFor"
+
+    - for eg 
+
+      <label htmlFor="username">Username:</label>
+      <input type="text" id="username" name="username">
+
+
+
+  - JSX EXPRESSIONS can also be PASSED into FUNCTIONS
+
+  - jsx can be added ANYWHERE inside a COMPONENT FUNCTION... i.e it can be used OUTSIDE the RETURN of the component function
+
+  - js COMMENTS are also considered as js code..... hence it should also be WRAPPED in {}
+
+  - if you want to pass in NUMBERS as ATTRIBUTE VALUES... you need to ENCLOSE it in {}
+
+
+  - INLINE STYLES in JSX should be written inside {{}} (video: 41)
+
+    - eg <h1 style={{color: "red"}}></h1>
+
+    ** first {} is to write the JS code 
+
+    ** inner {} belongs to STYLE OBJECT....as the syntax to apply INLINE STYLE in REACT is to PASS STYLE ATTRIBUTES inside JS OBJECT
+
+  - if STYLE ATTRIBUTE has MULTIPLE WORDS..... then it is written in CAMEL CASE 
+
+    - eg <h1 style = {{backgroundColor: "green"}}></h1>
+
+  - MULTIPLE style PROPERTIES are added after putting COMMA 
+
+    - eg <h1 style = {{ color: 'red', fontSize: '8px' }}></h1>
+
+  - html CLASS attribute is renamed as 'className' in JSX.... because CLASS is a RESERVED NAME in JS for OBJECT CLASSES 
+
+    - eg <h1 className=".container"></h1>
+
+  - to add MULTIPLE CLASSES from CSS FILE.... add classes with SPACE BETWEEN THEM 
+
+    - eg <h1 className='container header'></h1>

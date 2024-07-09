@@ -1,0 +1,92 @@
+..... a very important aspect of any react app is to HANDLE ERROR and DISPLAY ERROR MESSAGE in the SCREEN... this should happen on VARIOUS SCENARIOS 
+
+- COMMON ERROR HAPPENING SCENARIOS: 
+
+  1) INTERNET CONNECTION PROBLEM that can happen AFTER SENDING FETCH REQUEST 
+
+    ** this is checked by checking the presence of RES.OK object.... if it's NOT PRESENT then THROW A NEW ERROR using 
+
+       if (!res.ok )throw new Error('<error message>')
+
+      ** merely throwing error code DON'T DISPLAY IT.... to display it in the SCREEN as well as in CONSOLE... do the following 
+
+        - create a new ERROR state using USE-STATE HOOK to hold the error message to RENDER the message in the UI 
+
+          const [error, setError] = useState()
+
+        - WRAP the ERROR PRONE CODEs where you've written THROW CODE in TRY-CATCH-FINALLY BLOCK 
+
+          try {
+            error prone codes 
+
+            if (!res.ok) throw new Error('<error message>')
+          } catch(err) {
+
+          } finally {
+            write codes that you WANT TO RUN even if there is an ERROR
+          }
+
+        - use the CATCH BLOCK to handle the ERROR MESSAGE using its ERR object ARGUMENT 
+
+          - you can display the error message in CONSOLE USING 
+
+            console.error(err.message) ***** DIDN'T WORK
+
+          - you can set ERROR MESSAGE into ERROR STATE.... (this error state value is used to diaplay another ERROR-MESSAGE COMPONENT which will RENDER ERROR MESSAGE in the ui)
+
+          - eg
+
+            try {
+            error prone codes 
+
+            if (!res.ok) throw new Error('<error message>')
+
+          } catch(err) {
+            
+            console.error(err.message)
+
+            setError(err.message)
+          }
+
+        - USE THE FINALLY BLOCK to add CODES YOU WANT TO run EVEN if there is an ERROR THROWN 
+
+          - if js engine hits the THROW ERROR line in the TRY BLOCK.... IT WON'T RUN THE CODE that is BELOW the THROW ERROR LINE....
+
+          - so if your TRY BLOCK has a THROW ERROR LINE..... AND there is a MANDATORY CODE after the THROW ERROR LINE that you want to run..... then PLACE THAT CODE inside the FINALLY BLOCK 
+
+          - eg: 
+
+              try {
+              error prone codes 
+
+              if (!res.ok) throw new Error('<error message>')
+
+            } catch(err) {
+              
+              console.error(err.message)
+
+              setError(err.message)
+
+            } finally {
+
+              setIsLoading(false); 
+
+            }
+
+        - create ERROR-MESSAGE COMPONENT and pass in the ERROR MESSAGE as a PROP into it to render error message in the UI 
+
+          function ErrorMessage({message}) {
+            return <p> 
+              <span>{message}</span>
+            </span>
+          }
+
+  2) NO RESPONSE FROM API because of API CAN'T FIND the DATA QUERY that we've requested.... eg in movie app... if we search for a MOVIE NAME that the API CANNOT FIND 
+
+    - add another THROW ERROR LINE after THE DATA VARIABLE.... 
+
+      - eg in ombd api
+
+        if(data.Response === "False") throw new Error('Movie not found')
+
+          ** data.Response === "False" : this line is based on the JSON RETURNED BY the OMDB API.... so it'll VARY according to the API used 

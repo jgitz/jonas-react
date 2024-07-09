@@ -1,0 +1,23 @@
+.... in the project we use create-react-app to get features such as ESLINT..... and in later project we'll use VITE 
+
+- to create a react app using create-react app 
+
+  :: npx create-react-app <app-name>::
+
+- to run the app 
+
+  :: npm run start :: or :: npm start ::
+
+- folder structure 
+
+  - SRC FOLDER: where we store component files 
+
+  - PUBLIC FOLDER: where we store ASSETS such as FAVICON, IMAGES 
+
+    ** files from PUBLIC FOLDER can be directly used inside COMPONENTS without SPECIFYING RELATIVE PATH 
+
+  - src/index.js: entry point file which has REACT RENDER CODES 
+
+  - public/index.html: is the entry file with a div with ID = ROOT and a script tag which points to src/index.js 
+
+    ** index.html can be also put OUTSIDE the PUBLIC FOLDER 

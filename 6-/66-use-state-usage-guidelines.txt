@@ -1,0 +1,12 @@
+- When to use USE STATE and BEST PRACTICES 
+
+  - use USE STATE only for the data A COMPONENT NEEDS to REMEMBER OVER TIME 
+
+  - use STATES when your UI want to DYNAMICALLY change according to a DATA 
+
+  - UPDATION of state should be used inside an EVENT HANDLER function using SET STATE FUNCTION 
+
+  **** for DATA that SHOULD NOT trigger RE-RENDERS.... DON'T USE STATE..... use REGULAR VARIABLE instead...
+
+
+**** STATE of a COMPONENET is ISOLATED from the SAME state on a DIFFERENT COMPONENT..... 

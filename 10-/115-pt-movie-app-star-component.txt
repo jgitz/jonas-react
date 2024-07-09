@@ -1,0 +1,36 @@
+... to test a COMPONENT in isolation.... do the following steps 
+
+- inside index.js file 
+
+  - comment the import statements of 
+
+    - app.js 
+    - index.css
+
+  - import the component file and css if any 
+
+  - inside the <React.StrictMode></React.StrictMode>
+
+    - comment existing components including APP COMPONENT 
+
+    - use the COMPONENT TAG you want to test 
+
+**** all the COMMENTED LINES should be UNCOMMENTED after testing 
+
+
+>>>>>>>>>>p star rating component in movie app >>>>>>>>>>>>>>>>>>>>>>>>.
+
+
+
+..... create the star rating component to use in the MOVIE APP in ISOLATION.....
+
+- inside src.... create file named StarRating.js
+
+- setup conditions to TEST the star rating component in isolation 
+
+- the component should hold 10 star and a text right beside the last star that displays the rating number 
+
+- add styling using INLINE STYLE ATTRIBUTE 
+
+
+

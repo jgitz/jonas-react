@@ -1,0 +1,1 @@
+... add type checking using PROPS-TYPE PACKGAE on the STAR-RATING-COMPONENT

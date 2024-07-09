@@ -1,0 +1,25 @@
+.... REVISE VANILLA JS EVENT BUBBLING and EVENT DELETATION 
+
+- EVENTS in REACT: in react we use ATTRIBUTES like ON-CLICK, ON-CHANGE etc to add events and ASSIGN EVENT HANDLERS to the attributes....
+
+  .... BUT these HANDLERS are not ATTACHED to the COMPONENT/HTML TAG on which the ON-CLICK ATTRIBUTE was added..... 
+
+  .... the HANDLER FUNCTIONs of ALL THE ELEMENTS/COMPONENTS with EVENT ATTRIBUTES are PLACED on the ROOT DIV....
+
+  .... the EVENT object is created on <HTML> root tag and TRAVEL DOWN the DOM to the TARGET ELEMENT (CAPTURING PHASE).... and BUBBLES UP BACK (BUBBLING PHASE) to the <HTML> root tag..... and when the EVENT REACHES THE ROOT-DIV.... the EVENT is HANDLED as all the HANDLER FUNCTIONS are defined there by the REACT 
+
+- REACT EVENT PROPERTIES:
+
+  - has 2 most commonly used methods 
+
+    - e.stopPropagation()
+    - e.preventDefault()
+
+  - most EVENTS BUBBLE like FOCUS, BLUR, CHANGE 
+
+  - SCROLL EVENT DOES-NOT BUBBLE 
+
+  - EVENT HANDLER ATTRIBUTES are CAMEL CASE.... eg onClick, onChange, onSubmit etc 
+
+  - if you want event to be in CAPTURE PHASE use "CAPTURE" at the end of EVENT ATTRIBUTES like onClickCapture.... this is RARELY USED  
+

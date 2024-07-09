@@ -1,0 +1,3 @@
+.... the BEST PRACTICE is to move all the components into separate .JS FILES..... some common standards to follow is given below 
+
+- src/components FOLDER: move EVERY COMPONENT FILES.... INCLUDING APP.JS.... and EXCLUDING INDEX.JS and INDEX.CSS into src/components folder 

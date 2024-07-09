@@ -1,0 +1,16 @@
+** State is INTERNAL DATA owned by the COMPONENT INSIDE which IT IS DEFINED 
+
+  * PROPS is EXTERNAL DATA OWNED by the PARENT COMPONENT and is PASSED INTO a CHILD COMPONENT 
+
+** STATE variable is similar to COMPONENT MEMORY 
+
+  * PROPS is similar to FUNCTION PARAMETERS 
+
+** STATE CAN BE UPDATED from the COMPONENT in which it is defined 
+
+  * PROPS inside a CHILD COMPONENT is READ-ONLY and CANNOT be MODIFIED by the CHILD COMPONENT.... it can ONLY be MODIFIED inside the PARENT COMPONENT
+
+** UPDATING state will cause RE-RENDER of the COMPONENT in which it is defined. 
+
+  * UPDATING a PROP inside PARENT COMPONENT will TRIGGER RE-RENDER in BOTH PARENT and CHILD COMPONENTS 
+

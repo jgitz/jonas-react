@@ -1,0 +1,11 @@
+... every JSX ELEMENT always have a VALUE ATTRIBUTE.... so if you need to do some operations when VALUE of an JSX element like <input> CHANGES.... we use "onChange" attribute 
+
+- onChange Attribute: if you need to do some operations when VALUE of an JSX element like <input> CHANGES.... we use "onChange" attribute inside the HTML TAG 
+
+  - syntax eg: 
+
+    <input onChange={(e) => {
+      codes
+    }}>
+
+    ** the handler function assigned to ON CHANGE ATTRIBUTE always takes CHANGE EVENT (e) as argument

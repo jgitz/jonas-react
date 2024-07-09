@@ -1,0 +1,16 @@
+... no we need to specify what happens if you submit the form by defining codes inside the HANDLE FORM function 
+
+.... we need 3 things to happen on submit 
+
+  1) create an OBJECT named newItem in the format 
+
+    const newItem = {id, itemName, quantiry, packed:false }
+
+  2) after object is created... set the STATES to INITIAL VALUES 
+
+  3) before the FIRST STEP.... add a GUARD CLAUSE using IF statement such that... the OBJECT DON'T GET CREATED when the INPUT FIELD is EMPTY 
+
+    if(!itemName) return 
+
+
+**** travel list app will continue in NEXT FOLDER 

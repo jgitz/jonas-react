@@ -1,0 +1,9 @@
+... now we need to know WHERE to place the state based on the following scenarios 
+
+- set state INSIDE the COMPONENT: if a state is used ONLY by a COMPONENT....the state should be set inside that component 
+
+- set state inside PARENT COMPONENT and use PROPS if the state is needed by a CHILD COMPONENT 
+
+- if the state is used by MULTIPLE SIBLING COMPONENTS.... then LIFT THE STATE up to the COMMON PARENT (..later)
+
+- if a state is used by MULTIPLE COMPONENTS ALL OVER the component tree.... use GLOBAL STATE (..later)

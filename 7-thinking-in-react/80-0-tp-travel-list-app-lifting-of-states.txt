@@ -1,0 +1,39 @@
+.... till now we used STATIC CODES with DUMMY DATA to design the app.... now we need to restructure the code and LIFT the STATES to correct positions so the corresponding states can be accessed by relevant components 
+
+- when real development starts.... replace DUMMY DATA 
+
+- whenever you need to add an ITEM to an ARRAY STATE VARIABLE.... DON'T use PUSH METHOD... as it MUTATES the ARRAY.... REACT is AGAINST MUTATION.... hence use SPREAD OPERATOR to add new ITEM to a NEW ARRAY like below using SET-STATE PREVIOUS STATE SYNTAX 
+
+  setState((items) => {
+    return [...items, newItem ]
+  })
+
+  
+
+  ** ... will bring old items of the array and use spread operator over them 
+
+- LIFTING UP STATES: whenever you see STATES/FUNCTION that are used by MULTIPLE SIBLING COMPONENTS.... LIFT the STATES/FUNCTIONS to the FIRST/NEAREST?? COMMON PARENT COMPONENT and PASS it as PROPS 
+
+  ** if you encounter a line with SET-STATE to be LIFTED..... wrap the SET-STATE codes into SEPARATE FUNCTION and lift that funciton 
+
+  ** when you pass LIFTED FUNCTION as PROPS.... BEST PRACTICE to NAME the PROP is to add "ON" PREFIX 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- we use initialItems array as DUMMY ITEM.... so comment it  
+
+- make a new state named ITEMS using USE STATE.... this is initialized to empty array... and this is the state used to STORE THE ITEM OBJECTS generated when you submit the form.... 
+
+- now in handleSubmit inside form component.... create function named HANLDE-ADD-ITEMS with newItem as parameter to EXCLUSIVELY use setItems using setItems([...items, newItem])
+
+- invoke HANDLE-ADD-ITEMS to set newItem into the items array 
+
+- now we use DATA from this ITEM STATE to render ITEM LIST in PACKING LIST COMPONENT.... so inside packing list component replace INITIAL ITEMS ARRAY with ITEMS ARRAY MAP OVER  
+
+  **** but problem here is ITEMS ARRAY is in FORM COMPONENT.... PACKING LIST COMPONENT is the one uses the ITEMS ARRAY.... since PACKING LIST is not a CHILD OF FORM COMPONENT.... we CANNOT pass ITEMS ARRAY as PROPS into PL COMPONENT.... FORM and PL COMPONENT are siblings.... so inorder for PL component to access ITEM ARRAY.... we need to LIFT the ITEM STATE from FORM to APP.... because... APP is the NEAREST COMMON PARENT of FORM and PL components.... 
+
+    - after lifting ITEMS ARRAY to APP.... use ITEMS ARRAY as PROPS to pass to PL COMPONENT... and receive it in the PL COMPONENT 
+
+    **** NOW in FORM COMOPONENT... there's NO ITEMS and SET ITEMS to use in HANDLE-ADD-ITEMS function.... because we LIFTED ITEMS state to the APP COMPONENT....
+
+      - so we LIFT the ENTIRE HANDLE-ADD-ITEM FUNCTION to APP COMPONENT... because it's where ITEMS STATE is SITUATED....and pass the HANDLE-ADD-ITEM function as PROPS into the FORM COMPONENT.... and INSIDE FORM COMPONENT'S handle-submit function... invoke the prop to set new item into the items array 

@@ -1,0 +1,4 @@
+- create PIZZA COMPONENT.... just use any image form PUBLIC/PIZZA FOLDER and add any text 
+
+- use add PIZZA COMPONENT inside FUNCTIONAL APP COMPONENT 
+

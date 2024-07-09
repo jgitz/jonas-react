@@ -1,0 +1,19 @@
+.... form handle function can be specified to the form element in two ways 
+
+  1) using ON SUBMIT ATTRIBUTE in the FORM TAG 
+
+  2) using ON CLICK ATTRIBUTE inside the SUBMIT BUTTON ELEMENT in the form 
+
+    ** onClick CAN BE ADDED to ANY JSX ELEMENT like DIV, P etc 
+
+
+.... the difference between these two is that 
+
+- ON SUBMIT will work when hitting ENTER BUTTON on the form element 
+
+- ON CLICK will ONLY WORK if we CLICK the SUBMIT BUTTON 
+
+
+**** we CANNOT?? add ON-CLICK ATTRIBUTE to a COMPONENT TAG.... it can only be added to HTML TAG 
+
+  ** instead we must define the relevant STATE, and HANDLE-FUNCTIONS in the PARENT COMPONENT FUNCTION of the COMPONENT TAG and PASS IT AS PROPS..... on the COMPONENT TAG FUNCTION... use ON-CLICK on the RELEVANT HTML TAG and assign the HANDLE FUNCTION (PROP) as the value

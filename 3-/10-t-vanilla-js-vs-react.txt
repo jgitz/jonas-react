@@ -1,0 +1,7 @@
+** vanilla js need to perselect the DOM ELEMENTS using DOM MANIPULATION CODES in variables to add DATA UPDATES to it
+
+  * react DON'T select any DOM ELEMENTS using DOM MANIPULATION CODES
+
+** in vanilla js... we use js to MANIPULATE UI written in HTML CODE 
+
+  * react entirely use JS and even HTML is witten in JS via usage of JSX SYNTAX  

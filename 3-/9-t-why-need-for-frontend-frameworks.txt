@@ -1,0 +1,54 @@
+- Why is there a need for frontend framework? 
+
+
+  - before 2010 SERVER SIDE RENDERING was used to serve web pages to broweser 
+
+    - SSR(SERVER-SIDE RENDERING): the HTML,CSS,JS and other data files are combined and rendered at the BACKEND.... and then these files are send to CLIENT SIDE (.. the person who REQUESTED the files via browser)
+
+      ** all WORDPRESS WEBSITES use SSR
+
+      ** JQUERY LIBRARY was used to make the PAGE DYNAMIC and to make the page WORK the SAME across ALL BROWSERS
+
+      ** SSR is now making a comeback through fullstack FRAMEWORKS like NEXTJS, REMIX etc.... these frameworks are built on TOP of SPA FRAMEWORKS 
+
+    ****... but gradually developers started using MORE and MORE JS codes even to manipulate HTML and CSS which led to rise of WEB APPLICATIONS 
+
+  - SINGLE-PAGE-APPLICATIONS: these are web pages that are RENDERED on the CLIENT and NOT at the SERVER 
+
+    - the view in spa is rendered at the client side 
+
+    - the DATA is fetched from backend using API ENDPOINTS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what does FRONTEND END APPLICATIONS DO? 
+
+  - front end applications does two operations 
+
+    - receives the DATA 
+
+    - display ui gets updated wrt to the received data 
+
+    ** in summary.... the data and the ui should be in SYNC
+
+    **** SYNCING of DATA and UI updates is very COMPLEX PROCESS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- why VANILLA JS NOT used to create SPA'S?
+
+  - because it is difficult to keep DATA and UI in SYNC using VANILLA JS as the DATA in most enterprise level SPA is HUGE  
+
+  - building SPA in VANILLA JS calls for USE of MANUAL DOM MANIPULATION codes.... and this will be complex and lead to creation of SPAGHETTI CODE 
+
+  - STATES in vanilla js are stored in the DOM.... and these states will be updated from various other parts.... this makes it difficult to TRACK the state changes....
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what are advantages of FRAMEWORKS?
+
+  - FRAMEWORKS helps to make DATA and UI in sync  
+
+  - FRAMEWORKS helps to STRUCTURE our CODES 
+
+  

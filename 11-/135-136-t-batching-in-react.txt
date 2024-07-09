@@ -1,0 +1,41 @@
+- BATCHING: is a process where REACT ony does a SINGLE RENDER form MULTIPLE STATE UPDATED 
+
+  - for example: if there is a handler function with 3 SET-STATE METHODS to update the state.... then REACT WON'T RENDER the ui 3 TIMES.... instead it BATCHES THE 3 SET-STATE methods and only render it once 
+
+  ** in SOME RARE CASES.... we DON'T WANT AUTOMATIC BATCHING... so in that case WRAP the SET-STATE-UPDATE METHOD inside the FOLLOWING METHOD 
+
+    ReactDOM.flushSync(<set-state>)
+
+  ** to update the state on CURRENT VALUE use CALLBACK FUNCTION in the SET-STATE METHOD 
+
+    setState((state) => {
+      codes
+    })
+
+  - BATCHING in REACT 17 V/S REACT 18 
+
+    - AUTOMATIC BATCHING in EVENT HANDLER FUNCTIONS
+
+      - react 17: YES
+      - react 18: yes 
+
+    - AUTOMATIC BATCHING in TIMEOUT METHODS
+
+      - react 17: NO 
+      - react 18: yes 
+
+    - AUTOMATIC BATCHING in PROMISES
+
+      - react 17: NO
+      - react 18: yes 
+
+    - AUTOMATIC BATCHING in .addEventListner (NATIVE EVENTS)
+
+      - react 17: NO 
+      - react 18: yes 
+
+***** if you do a CONSOLE.LOG of a STATE IMMEDIATELY AFTER using SET-STATE method.... you WON'T get the UPDATED STATE VALUE.... because UPDATING STATE in REACT is ASYNCHRONOUS 
+
+    
+
+    

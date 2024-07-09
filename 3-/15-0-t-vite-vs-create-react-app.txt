@@ -1,0 +1,38 @@
+..... there are 2 ways in which you can SET up REACT PROJECTS....
+
+1) use CREATE-REACT-APP: 
+
+  - is a STARTER KIT to start react projects 
+
+  - the kit includes tools like 
+
+    - ESLINT(to show error underlines and explanation when hovering over errors)
+    - PRETTIER (to format code)
+    - JEST (testing)
+    - WEBPACK (for module bundling)
+    - BABEL
+    - development SERVER (to run the project)
+
+  - DISADVANTAGES
+
+    - old and OBSOLETE 
+    - WEBPACK is an OUTDATED TOOL 
+     
+  ** now create-react-app is used to only do EXPERIMENTAL REACT PROJECTS 
+
+  **** REAL WORLD PROJECTS are done using VITE 
+
+2) VITE: is a MODERN BUILD TOOL which contain a TEMPLATE to set REACT APPLICATIONS 
+
+  - VITE is new way to BUILD REALWORLD REACT APPS 
+
+  - VITE is EXTREMELY FAST  
+
+  - VITE DON'T COMES WITH tools like... ESLINT, TESTING LIBRARY , PRETTIER.. etc
+
+  - DISADVANTAGE 
+
+    - tricky to set ESLINT in VITE  
+
+ 
+

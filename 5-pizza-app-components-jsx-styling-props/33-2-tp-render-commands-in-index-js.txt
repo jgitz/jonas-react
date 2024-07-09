@@ -1,0 +1,15 @@
+.... now we've a demo app component inside index.js..... this CAN'T BE viewed inside browser without RENDER COMMANDS 
+
+- goto index.js 
+
+  - after the APP FUNCTION... do the following 
+
+    - using REACTDOM CREATE-ROOT METHOD set DIV from INDEX.HTML as ROOT ELEMENT 
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+
+    - RENDER the APP COMPONENT using RENDER-METHOD from REACT-DOM 
+
+              root.render(<App/>);
+
+  ** Now your app component html is displayed in the browser  

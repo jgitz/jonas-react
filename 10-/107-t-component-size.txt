@@ -1,0 +1,13 @@
+.... COMPONENT SIZE are subjective to developers and the requirement.....
+
+- components SHOULD NOT be VERY LARGE 
+
+- components SHOULD NOT be VERY SMALL 
+
+- ideal size of component is in between large and small 
+
+- if a component has more than 4? PROPS it's better to SPLIT INTO smaller components 
+
+- components can also be NON-REUSABLE 
+
+- ITS BETTER to start building components RIGHT AWAY and SPLIT the REPEATING CODES into SEPARATE COMPONENT

@@ -1,0 +1,13 @@
+... start PROJECT NAMED STEPS....
+
+.... the project is to display 3 messages.... it is a CARD with 2 BUTTONS named PREVIOUS and NEXT..... by default the card should display a MESSAGE.... then on clicking NEXT.... it moves to STEP 2 and DISPLAY another MESSAGE... then on clicking NEXT.... it move to step 3 and displays another message 
+
+- use npx create-react-app command to create project folder 
+
+- use resources from the RESOURCE FOLDER 
+
+- copy the codes from index.css from the resource folder and paste it in index.css of the PROJECT 
+
+- design STATIC DESIGN of the site inside APP.JS... and apply RELEVANT CLASSES of INDEX.CSS
+
+- index.css consists MESSAGE ARRAY as comments..... copy it and paste it in APP.JS.... OUTSIDE the function APP().... this array gives the DATA for MESSAGES 

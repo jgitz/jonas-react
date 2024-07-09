@@ -1,0 +1,15 @@
+... now we can to specify what happens when the form is submitted.... 
+
+- in app.js.... before the form component function return.... create function named HANDLE_SUBMIT to wite codes...
+
+  - use EVENT ARGUMENT in the function to use EVENT OBJECT for various event related operations... eg 
+
+    - e.target : used to get the entire TARGET ELEMENT on which the event is acting 
+
+    - e.target.value: is use to get the VALUE of the TARGET ELEMENT if it has a VALUE ATTRIBUTE 
+
+  - inside handle submit.... use e.preventDefault() to prevent default behaviour of re-rendering of ui on form submission 
+
+  ** rest codes will be written later 
+
+- inside FORM ELEMENT TAG in the form component function return.... use "onSubmit" attribute and assign it to HANDLE SUBMIT FUNCTION 

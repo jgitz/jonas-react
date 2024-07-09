@@ -1,0 +1,71 @@
+- USE EFFECT HOOK: is a hook used in react to ISOLATE and RUN CODES that'll create SIDE-EFFECTS at DIFFERENT PHASES of COMPONENT LIFE-CYCLE (MOUNT, RE-RENDER, UNMOUNT PHASES) 
+
+  - USE-EFFECT HOOK SYNTAX: 
+
+    useEffect(() => {
+      codes that create side-effects such as FETCH REQUEST to a URL 
+
+      return () => {
+        CLEAN UP CODES 
+      }      
+    }, [])
+
+      ** to use USE-EFFECT HOOK in react... you need to FIRST IMPORT {useEffect} from 'react'
+
+      ** USE-EFFECT HOOK TAKE TWO ARGUMENTS 
+
+        1) EFFECT FUNCTION: is a CALLBACK FUNCTION to
+        write the CODES that produce SIDE-EFFECT 
+
+          ** CLEAN-UP FUNCTION: is a FUNCTION that is RETURNED by the EFFECT FUNCTION... an CLEAN UP CODES are written inside the CLEAN UP FUNCTION 
+
+            ** CLEAN-UP FUNCTION runs before any RE-RENDERS or when COMPONENT UNMOUNTS 
+
+        2) DEPENDENCY ARRAY: LATER.... use an EMPTY ARRAY... and DO-NOT OMMIT it.... else INFINITE RUNNING of EFFECT will HAPPEN 
+
+
+  ** USE-EFFECT HOOK will ONLY RUN the EFFECT FUNCTION CODE after MOUNTING/FIRST-RENDER of the component.... to be said precisely... it is ONLY RUN AFTER the COMPONENT is PAINTED into the BROWSER for the FIRST TIME.... the FLOW GOES LIKE THIS 
+
+    MOUNT > COMMIT > BROWSER PAINTS > EFFECT FUNCTION is run 
+
+      ** effect function is RUN ONLY AT THE END because.... it mighg have TIME-INTENSIVE ASYNCHRONOUS CODES such as FETCH()...
+
+  ** eg use effect hook 
+
+    useEffect(() => {
+      fetch( `<URL>`)
+      .then((res) => res.json())
+      .then(data => setState(data))
+    }, [])
+
+
+
+**** during DEVELOPMENT.... USE-EFFECT will be RUN TWICE by the react app if you use <React.StrictMode></React.StrictMode> wrapper.... strict mode will RUN THE USE-EFFECT twice to find ERRORS??.... this behaviour will VANISH in PRODUCTION 
+
+**** MORE on USE-EFFECT HOOK and other HOOKS... later 
+
+
+>>>>>>> video 148 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- DEPENDENCY ARRY: is the SECOND ARGUMENT taken by the USE-EFFECT HOOK 
+
+  - the USE EFFECT tracks for any CHANGE in the ARRAY-ITEM VALUES and RE-RENDER EVERY TIME it detects change 
+
+  - the ITEMS of the array should be the different STATES, PROPS OR ANY VARIABLE THAT IS DEPENDENT ON STATE/PROP.....
+
+  - if your EFFECT FUNCTION CODE has STATES/PROPS/VARIABLES-DEPENDENT-ON-STATES/PROPS.... you SHOULD ADD THEM to the DEPENDENCY ARRAY
+
+
+
+
+** USE-EFFECT HOOK will ONLY RUN the EFFECT FUNCTION CODE after MOUNTING/FIRST-RENDER of the component.... to be said precisely... it is ONLY RUN AFTER the COMPONENT is PAINTED into the BROWSER for the FIRST TIME.... the FLOW GOES LIKE THIS 
+
+    MOUNT > COMMIT > LAYOUT EFFECT (later??) BROWSER PAINTS > EFFECT FUNCTION is run 
+
+      ** effect function is RUN ONLY AT THE END because.... it mighg have TIME-INTENSIVE ASYNCHRONOUS CODES such as FETCH()...
+
+      ** LAYOUT EFFECT is a PHASE that is USED LESS.... it allows you to ADD EFFECTS BEFORE the BROWSER PAINTING PHASE..... it uses the USE-LAYOUT-EFFECT HOOK 
+
+**** if the EFFECT FUNCTION has codes that SET-STATE.... then ADDITIONAL RENDER will be required to RENDER THE UI.... so NEVER OVER-USE use-effect 
+
+

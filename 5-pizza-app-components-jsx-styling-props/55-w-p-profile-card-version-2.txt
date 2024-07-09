@@ -1,0 +1,1 @@
+.... didn't do.... it involves use of ARRAY OF OBJECTS to RENDER the skills in the profile card

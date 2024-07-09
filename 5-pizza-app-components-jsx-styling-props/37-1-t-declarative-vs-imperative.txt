@@ -1,0 +1,9 @@
+- IMPERATIVE APPROACH
+
+  - we list out steps to acheive UI using MANUAL ELEMENT SELECTION, DOM TRAVERSING etc 
+
+- DECLARATIVE APPROACH
+
+  - DESCRIBE what UI should look like using JSX based on CURRENT DATA (.. using PROPS and STATES)
+
+  - DOM MANIPULAITON is ABSTRACTED by the react framework 

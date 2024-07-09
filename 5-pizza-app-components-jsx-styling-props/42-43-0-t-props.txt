@@ -1,0 +1,113 @@
+PROPS: allows to send DATA from PARENT COMPONENT to CHILD COMPONENTS 
+
+  - SETTING PROPS is DONE in TWO STEPS
+
+    1)STEP 1: PASS IN props as ATTRIBUTES inside the CHILD COMPONENT JSX.... like below inside the PARENT COMPONENT FUNCTION 
+
+      - for eg 
+
+        function Parent() {
+          return (
+            
+            <Child prop1= 'value' prop2={number_value} prop3= 'value'/>
+
+          )
+        }
+
+        ** in the backend... a PROPS OBJECT is created by REACT like below 
+          {
+            prop1: 'value',
+            prop2: number_value,
+            prop3: 'value'
+
+          }
+    2) STEP 2: RECEIVE the PROPS insice CHILD COMPONENT FUNCTION as PROP ARGUMENT... and USE it inside the child at relevant places....
+
+      - for eg: 
+
+        function Child(props) {
+          return (
+            <div>
+              <p>{props.prop1.<>}</p>
+              <p>{props.prop2}.<></p>
+              <p>{props.prop3}.<></p>
+            </div>
+          )
+        }
+
+        ** CURLY BRACKETS is used because the PROP that the function receives is an OBJECT.... hence it in JS... so JSX syntax is to use CURLY BRACKETS 
+
+  - DESTRUCTURING of PROPS OBJECT in the CHILD COMPONENT FUNCTION.... 
+
+    - usual way of using props in child component is using PROPS ARGUMENT in the function and call PROPS VALUES using props.<prop1>..... 
+
+    - BUT we can USE OBJECT DESTRUCTURING to USE the PROP directly in the FUNCTION.... WITHOUT any DOT CHAINING 
+
+      function ({<prop1>, <prop2>}) {
+        return (
+          <h1>{prop1.<>}</h1>
+          <h1>{prop2}.<></h1>
+        )
+      }
+
+      ** DON'T forget CURLY BRACKETS inside the PARAMETERS that is used for OBJECT DESTRUCTURING.... the PROPS NAME inside {} should match with the passed in PROP from the PARENT COMPONENT
+
+  - ANY DATATYPE can be passed as props like 
+
+    - ARRAYS
+    - OBJECTS
+    ** FUNCTIONS
+    ** OTHER COMPONENTS 
+
+  - PROPS are DATA sent from PARENT COMPONENT to CHILD COMPONENT 
+
+    ** PROPS are OWNED by PARENT COMPONENT 
+
+    **** props CANNOT be MODIFIED by CHILD COMPONENT.... it can ONLY be MODIFIED by PARENT COMPONENT
+
+>>>>>>>> VIDEO 43 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... STATE and PROPS are commonly used to handle DATA in REACT (..there are other ways too?? but state and props are the MOST COMMONLY used ones)
+
+- STATE: is used to handle data INSIDE A COMPONENT FUNCTION 
+
+- PROPS: is used to TRANSFER DATA from PARENT COMPONENET to CHILD COMPONENTS 
+
+** PROPS RULE in REACT 
+ 
+  - a STRICT RULE in REACT regarding PROPS is that.... PROPS are IMMUTABLE (..i.e it is READ-ONLY)
+
+  - if you need to MUTATE PROPS.... you should ALWAYS use STATE (..later)
+
+>>>> 43 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- why PROPS are made IMMUTABLE in REACT? 
+
+  - when a PROP is allowed to get modified (..MUTATE) outside the PARENT COMPONENT (..inside CHILD COMPONENT).... 
+  
+  .....it will ALSO MODIFY the PROPS object that is inside the PARENT COMPONENT (..because the behaviour of JS object is that if you make change to a COPY of an object.... then THE ORIGINAL OBJECT will also get changed)
+
+  .... this is a SIDE-EFFECT.... and REACT DON'T want SIDE-EFFECTS... as it can make bugs 
+
+  ..... REACT always want its FUNCTIONS to be PURE FUNCTIONS....
+
+  ... that is the reason why the PROPS in react is made IMMUTABLE.... if PROPS are made MUTABLE in CHILD COMPONENT FUNCTION.... then there is SIDE-EFFECT inside PARENT COMPONENT FUNCTION.... and this makes the PARENT FUNCTION IMPURE....
+
+>>>> 43 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- what is ONE-WAY DATA FLOW in REACT?
+
+  - data flow B/W PARENT and CHILD COMPONENT is restricted as a ONE WAY FLOW from PARENT to the CHILD using PROPS 
+
+  ** framework such as ANGULAR... employs TWO WAY DATA FLOW b/w PARENT and CHILD 
+
+  ** DISADVANTAGES of TWO WAY data flow 
+
+    - it's difficult to DEBUG BUGS 
+
+    - it makes the UI UPDATES LESS PREDICTABLE
+
+    - LESS EFFICIENT 
+
+
+  **** there is a way to pass DATA from CHILD TO PARENT.... we'll learn in NEXT LESSON 

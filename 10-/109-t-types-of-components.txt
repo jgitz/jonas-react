@@ -1,0 +1,33 @@
+..... a simple classification of components catagorises them to THREE TYPES 
+
+1) STATELESS/PRESENTATIONAL COMPONENT: 
+
+  - has no state 
+  
+  - receives data as PROPS and renders the output 
+
+  - usually SMALL and REUSABLE 
+
+  - eg: LOGO component to display logo
+
+2) STATEFUL COMPONENTS: 
+
+  - have STATE 
+
+  - can be reused 
+
+3) STRUCTURAL COMPONENTS: 
+
+  - COMPONENTS formed by COMBINING many other components 
+
+  - USUALLY HUGE and NON-REUSABLE (.. there are EXCEPTIONS on size and reusability )
+
+  - eg: PAGES, LAYOUTS, SCREENS??
+
+** in our movie app component 
+
+  - STRUCTURAL COMPONENTS = NAVBAR, APP, MAIN components 
+
+  - STATE-LESS/PRESENTATIONAL COMPONENT = LOGO, NUM-RESULTS, MOVIE, WATCHED-SUMMARY, WATCHED-MOVIES-LIST, WATCHED-MOVIE
+
+  - STATE-FUL COMPONENTS = SEARCH, LIST-BOX, MOVIE-LIST, WATCH-BOX

@@ -1,0 +1,49 @@
+<!-- 
+..... react can also be written inside HTML file using REACT SCRIPTS 
+
+- TWO SCRIPTS are taken from REACT DOC inorder to bring react into our html file 
+
+  - one script is to get CORE REACT funcitonalities like useState(), useEffect() etc
+
+  - 2nd script is used to bring REACT-DOM functionalities like RENDERING... that will allow to work on DOM 
+
+** in HTML.... JSX WON'T work..... so we use DOM MANIPULATION METHODS.....
+
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  <div id="root"></div> <!-- 1 created to make it as root element inside which we render our components -->
+
+  
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> <!-- 2 the above 2 script tags obtained from internet is used to bring react functions into this page.... -->
+
+  <script>// 3 this script is where we write react codes define components and RENDER THEM 
+
+   /* 4 rendering app component */ 
+   function App () {
+
+    return React.createElement("p", null, "This is App component") // 5 the first argument creates P TAG....SECOND ARGUMENT is for PROPS to pass to the component.... THIRD ARGUMENT is the CONTENT to be added to the tag
+   }
+
+   const root = ReactDOM.createRoot(document.getElementById("root")); /* 6 REACT DOM function to set ROOT element inside which you want to render components */
+
+   root.render(React.createElement(App)); /* 7 
+   only now the APP COMPONENT gets RENDERED.... RENDER happens because of REACTDOM function which is assigned to the ROOT
+   */
+
+  // ** to use useEffect.... use React.useEffect(arrow function, dependency array)
+
+  // ** to use useState....use React.useState()
+
+
+  </script>
+ </body>
+ </html>

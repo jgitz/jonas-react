@@ -1,0 +1,1 @@
+.... conditionally add CSS CLASS to SOLDOUT pizza such that the soldout PIZZA TILE is displayed in BLACK AND WHITE..... use the SOLDOUT key from the PIZZA DATA OBJECT to apply CSS

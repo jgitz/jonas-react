@@ -1,0 +1,5 @@
+.... some REACT EVENTS based on MOUSE POSITION are: 
+
+- onMouseEnter : takes function as value and triggers the function when the MOUSE ENTERS the HTML ELEMENT
+
+- onMouseLeave : takes function as value and triggers the function when the MOUSE LEAVES the HTML ELEMENT 

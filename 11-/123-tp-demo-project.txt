@@ -1,0 +1,17 @@
+.... now we just PAUSE DEVELOPMENT OF MOVIES APP....
+
+... the concepts in this section is explained through a PRE-BUILT REACT PROJECT in the RESOURCES folder named 08-how-react-works....
+
+- copy and paste the 08-how-react-works/starter PROJECT FOLDER into the PROJECTs-FOLDER...
+
+  - reaname the starter folder to 123-how-react-works
+
+- to install all packages used in the project.... goto projects-folder/123-how-react-works
+
+  - open terminal and type 
+
+    :: npm i :: 
+
+
+
+** STUDY THE WHOLE PROJECT BY ANALYSING THE CODE 

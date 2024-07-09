@@ -1,0 +1,13 @@
+.... we need a CLOSE button on top right of the STEPS CARD.... such that the CARD gets DISAPPEARED on clicking the close button.... and REAPPEARS when clicking close button once again
+
+- in app.js return 
+
+  - using USE STATE.... create a BOOLEAN state named "isOpen" to use it a a flag to TOGGLE APPEARANCE of the card of JSX VIEW 
+
+  - create a close button using the ENTITY &times; inside a BUTTON TAG .... assign close classname from index.css 
+
+  - on the CLOSE BUTTON JSX ELEMENT  assign a onClick attribute with an arrow function to toggle BOOLEAN VALUES of isOpen state
+
+
+
+  - in JSX CODE use && conditional rendering based on ISOPEN state value to toggle appearance of CARD HTML CODES 

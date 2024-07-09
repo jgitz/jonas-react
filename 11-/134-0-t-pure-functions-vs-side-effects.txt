@@ -1,0 +1,66 @@
+- PURE FUNCTION: is a function that gives SAME OUTPUT for SAME INPUT 
+
+    ** PURE FUNCTION DOES-NOT CHANGE VARIABLES OUTSIDE its SCOPE 
+
+    ** example for pure function 
+
+      function circleArea (r) {
+        return 3.14 * r * r
+      }
+
+        - if r is 4 then the return value will ALWAYS BE 3.14 * 4 * 4 
+
+- IMPURE FUNCTION: is a function that DOES-NOT give SAME output for the SAME INPUT 
+
+   ** an impure function also MUTATES DATA which is OUTSIDE the FUNCTION SCOPE 
+
+   ** example for IMPURE FUNCTION   
+
+    function dateReminder (name) {
+
+        const date = Date.now()
+
+      return `hi ${name}.. today is ${date}`
+    }
+
+      - here the return value always changes with time.... even if the INPUT argument given is SAME NAME 
+
+
+- SIDE EFFECTS: if INVOKING a FUNCTION MODIFIES any DATA OUTSISE of ITS FUNCTION SCOPE.... it's called SIDE-EFFECT 
+
+  ** examples of side effects
+
+    - mutation of external variables outside of function scope 
+
+    - HTTP REQUESTS 
+
+    - WRITING to DOM 
+
+    - using CONSOLE.LOG()
+
+    - creating RANDOM-NUMBERS??
+
+  ** SIDE-EFFECTS are NOT BAD 
+
+  ** example of a function that create side effect 
+
+    const area = {}
+
+    function circleArea (r) {
+      area.circle = 3.14 * r * r 
+    }
+
+    circleArea(4)
+
+      - this program creates side effect as it mutates AREA OBJECT as circleArea function is invoked 
+
+** TWO COMMON PLACES which are used IN REACT to ISOLATE SIDE-EFFECTS are 
+
+  1) EVENT HANDLER FUNCTIONS 
+
+  2) USE-EFFECT HOOK 
+
+  ***** EVENT HANDLER FUNCTIONS are the MOST-PREFERRED way to make SIDE-EFFECTS in react... and DON'T OVER-USE USE-EFFECT HOOK
+
+
+

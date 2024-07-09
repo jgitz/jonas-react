@@ -1,0 +1,3 @@
+.... this section deals with 
+
+  - INTERNAL WORKING of REACT 

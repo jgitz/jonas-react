@@ -1,0 +1,14 @@
+- take starter files for pizza project from resources folder 
+
+  - PIZZA FOLDER has PIZZA IMAGES 
+
+  - DATA.JS file consists for PIZZA DATA to use 
+
+  - INDEX.CSS file is css file for index.js 
+
+- copy entire code from DATA.JS into top of INDEX.JS 
+
+- copy PIZZA FOLDER to PUBLIC FOLDER 
+
+- copy INDEX.CSS FOLDER to SRC FOLDER 
+

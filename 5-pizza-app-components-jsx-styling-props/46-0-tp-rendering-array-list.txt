@@ -1,0 +1,13 @@
+.... in most cases.... the data to be used in for UI UPDATES comes in the form of ARRAY of OBJECTS.... to JSX {} cannot use LOOP methods to loop over array... but can use ARRAY MAP METHOD
+
+- BEST PRACTICE when using ARRAY map method 
+
+  - always pass in the ARRAY ITEM OBJECT as PROPS to the CHILD COMPONENT 
+
+  - KEY PROP: is a REACT specific prop for performance optimisation.. its important to PASS IN the KEY PROP with a UNIQUE value from the ARRAY OBJECT ITEM
+
+  - alway use SEMANTIC HTML TAGS like <ul></ul> and <li></li> when needed 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- in pizza app.... refactor the code such that... render PIZZA list using a SINGLE ARRAY MAP method 

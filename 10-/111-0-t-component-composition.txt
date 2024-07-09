@@ -1,0 +1,80 @@
+..... simple use of COMPONENTS is by using COMPONENT TAGS INSIDE other COMPONENT FUNCTIONS..... 
+
+.... BUT, THIS MAKES the COMPONENT FUNCTION LESS REUSABLE.... because COMPONTNT TAGS are DIRECTLY USED inside the function...
+
+
+.... the only solution is to use COMPONENT COMPONSITION TECHNIQUE....
+
+- COMPONENT COMPOSITION: is a technique where any component is made reusable by PASSING OTHER COMPONENT into ITS COMOPNENT FUNCTION via CHILDREN PROP or OTHER PROPS 
+
+  ** COMPONENT COMPOSITION is used in the BELOW TWO SCENARIOS: 
+
+    1) to make components FLEXIBLE and REUSABLE 
+
+    2) to PREVENT PROPS DRILLING 
+
+- STEPS to implement COMPONENT COMPOSITION: 
+
+  - STEP 1: identify your target COMPONENT FUNCTION...
+
+    - replace the PROPS ARGUMENT with CHILDREN PROP 
+  
+    - CUT and COPY THE OTHER COMPONENT TAGS USED inside the component function 
+
+    - REPLACE THE OTHER COMPONENT TAGS with CHILDREN PROP like below 
+
+      ComponentFunction({children}) {
+        return (
+          {children}
+        )
+      }
+
+  - STEP 2: goto the TARGET COMPONENT TAG and 
+  
+    - REPLACE it with the CLOSED TAG COMPONENT SYNTAX
+
+    - in between the tags PASTE the COMPONENT TAGS that you've CUT and COPIED from the component function 
+
+      <Component>
+        <CopiedComponent/>
+        <CopiedComponent/>
+      </Component> 
+
+  ** in the EXAMPLE in NEXT IMAGE FILE.... we first use SUCCESS COMPONENT DIRECTLY inside the COMPONENT FUNCTION of the MODAL COMPONENT.... this makes MODAL FUNCTION NOT REUSABLE..... so to make MODAL COMPONENT REUSABLE... we pass SUCCESS COMPONENT AS CHILDREN into the MODEL COMPONENT FUNCTION.... now we can pass in other messages as COMPONENTS like ERROR MESSAGE into the MODAL COMPONENT
+
+>>>>>>> video 114 ELEMENT PROP SYNTAX >>>>>>> 
+
+... COMPONENT COMPOSITION CAN ALSO BE IMPLEMENTED using ELEMENT PROP SYNTAX...... 
+
+  - step 1: inside the parent component function use ELEMENT ARGUMENT and use it where you want to display CHILD COMPONENT TAGS 
+
+    Parent_Component_function({element}) {
+      {element}
+    }
+
+  - step 2: parent component function will be in the below syntax using ELEMENT PROP to PASS IN CHILD COMPONENT TAGS 
+
+    <Parent_Component element={<Child_Component_Tag}/>
+
+
+    ** to pass in MULTIPLE CHILD COMPONENT TAGS... wrap the child tags in FRAGMENTS like below 
+
+    <Parent_Component 
+      element= {
+        
+        <>
+        <Child_Component_Tag_1/>
+        <Child_Component_Tag_2/>
+        </>
+      }
+
+  ** this syntax is used by REACT ROUTER LIBRARY 
+
+  ***** PREFER OTHER SYNTAX over this as the OTHER SYNTAX with CHILDREN PROP is more readable
+
+  
+
+
+
+
+

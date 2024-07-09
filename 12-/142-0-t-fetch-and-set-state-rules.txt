@@ -1,0 +1,13 @@
+**** NEVER use FETCH REQUEST or SET-STATE METHOD inside TOP LEVEL of any COMPONENT INSTANCE.... because this will cause INFINITE RE-RENDERING of the COMPONENT 
+
+  
+
+  - if FETCH METHOD is used.... THEN INFINITE REQUESTS will be sent to the URL 
+
+  - if SET-STATE is used.... RE-RENDER ERROR will get displayed 
+
+
+
+  ** SOLUTION to these above problems is the USE of USE-EFFECT HOOK?? (LATER....)
+
+    - use-effect hook allows you to SAFELY RUN SIDE-EFFECTS

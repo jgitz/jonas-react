@@ -1,0 +1,29 @@
+- COMPONENTS: are the BUILDING BLOCKS of REACT APPLICATIONS 
+
+  ** components are UI ELEMENTS which has ITS OWN 
+
+    - APPEARANCE 
+    - DATA 
+    - LOGIC 
+
+  ** components can be REUSED, NESTED as well as has the ability to PASS DATA b/w them
+
+** component heirarchy can be understood my creating COMPONENT TREE 
+
+** REACT is used to RENDER MULTIPLE COMPONENT VIEWS and combine it to form the USER INTERFACE 
+
+** component files are made inside src folder 
+
+** component is just a JS FUNCTION 
+
+** RULES for a component function 
+
+  1) function name should start with UPPER CASE (.. same with COMPONENT FILE NAME)
+
+  2) RETURN of component function should NEVER BE EMPTY/null value
+
+  3) to RETURN multiple ELEMENT TAGS inside a component use REACT FRAGMENT (<></>)
+
+** we define component structure using FUNCTIONS.... but to use COMPONENT ELSE WHERE..... the JSX SYNTAX for the component  is  used (in the below format)
+
+    <Component/>

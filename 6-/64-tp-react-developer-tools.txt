@@ -1,0 +1,19 @@
+.... to debug REACT APP.... you can install REACT DEVELOPER TOOLS for your browser 
+
+- install REACT DEVELOPER TOOLS EXTENSION in your browser 
+
+- now in the BROWSER CONSOLE TAB.... you can see TWO NEW TABS named 
+
+  - components 
+
+  - profiler??
+
+- COMPONENT TAB: shows the COMPONENT TREE 
+
+  - click THE COMPONENT TO SEE THE FOLLOWING 
+
+    - PROPS: shows PROPS RECEIVED by the component 
+
+    - HOOKS: shows hooks used in the component and their values incase of USE STATE HOOKS  
+
+      ** you can CLICK and CHANGE VALUES to experiment with different values

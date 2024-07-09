@@ -1,0 +1,9 @@
+..... build a tip calculator for you and your spouse..... refer the below photo for more details 
+
+.... first we need to specify an input for the BILL of the meals 
+
+..... then how much percentage you liked the SERVICE (0%, 5%, 10%, 20%)....
+
+.... now calculate the percentage for the WIFE'S satisfaction on the service 
+
+.... final tip = ((average of you and your spouse's satisfaction%) * 100) / final bill 

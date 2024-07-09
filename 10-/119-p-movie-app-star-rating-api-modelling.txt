@@ -1,0 +1,17 @@
+.... modify the star-rating component to model it into an api to reuse it outside in other projects....
+
+... do thei by adding the FOLLOWING PROPS 
+
+
+- in STAR-RATING COMPONENT FUNCTION... add PROPS 
+
+  - color 
+  - fontSize 
+  - className (optioal... this is used to add any other styling using classes from css file)
+
+  ** add default values for the props 
+
+  ** now you can use different versions of the star-rating component by adding DIFFERENT COLORS and FONT-SIZE as props in the component tags like this 
+
+    <StarRating color='blue' fontSize='24px'/>
+

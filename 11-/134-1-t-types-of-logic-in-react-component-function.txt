@@ -1,0 +1,55 @@
+.... REACT COMPONENT FUNCTIONS is the place where we write LOGIC for the COMPONENT 
+
+..... LOGIC codes written in the component are CLASSIFIED into TWO TYPES 
+
+1) RENDER LOGIC: 
+
+  - these are all the STATES, RETURNS... or other FUNCTION RETURNS... described in the COMPONENT FUNCTION.... that is used to RENDER JSX
+
+  ** NO CODEs which CREATE SIDE-EFFECT is allowed in RENDER LOGICS... i.e RENDER LOGIC should contain PURE FUNCTIONS
+
+    ** SOME SIDE-EFFECT exceptions that can be USED in RENDER LOGIC are 
+
+      - console.log()
+
+      - CREATING RANDOM NUMBERS 
+
+  **** RENDER LOGIC RULES:
+
+    - render logic SHOULD NOT UPDATE STATEs OR REFS (.. it create INFINITE LOOP)
+
+    - render logic SHOULD NOT perform API CALLS 
+
+    - render logic SHOULD NOT start TIMERS 
+
+    - render logic SHOULD NOT DIRECTLY USE DOM API ?? 
+
+    - render logic SHOULD NOT MUTATE OBJECTS/VARIABLES outside its scope
+
+
+
+
+2) EVENT HANDLER LOGIC: are functions inside the COMPONENT FUNCTION that handles EVENTS OCCURING in the UI 
+
+ - examples of commonly used logic in event handlers are 
+
+  - to UPDATE STATE 
+
+  - to handle HTTP REQUESTS
+
+  - reading INPUT FIELDS 
+
+  - PAGE NAVIGATION??  
+
+ ** SIDE-EFFECTS CAN BE USED (..and is ENCOURAGED) inside EVENT HANDLER LOGIC 
+
+** TWO COMMON PLACES which are used IN REACT to ISOLATE SIDE-EFFECTS are 
+
+  1) EVENT HANDLER FUNCTIONS 
+
+  2) USE-EFFECT HOOK 
+
+  ***** EVENT HANDLER FUNCTIONS are the MOST-PREFERRED way to make SIDE-EFFECTS in react... and DON'T OVER-USE USE-EFFECT HOOK
+
+**** we can also use SIDE-EFFECTS in various HOOKS (..later ) 
+

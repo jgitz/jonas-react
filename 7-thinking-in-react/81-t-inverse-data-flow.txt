@@ -1,0 +1,4 @@
+.... REACT only supports PARENT to CHILD ONE-WAY DATA FLOW..... so to do INVERSE DATAFLOW aka CHILD TO PARENT COMMUNICATION we can use LIFTING UP STATE TECHNIQUE.... i.e 
+
+- MOVE the STATES from CHILD to COMMON PARENT COMPONENT.... and pass the STATE and SET-STATE function as PROPS to child.... hence the STATE VALUE inside parent can be changed by using SET-STATE PROP inside the CHILD COMPONENT... hence CHILD to PARENT COMMUNICATION is achieved 
+

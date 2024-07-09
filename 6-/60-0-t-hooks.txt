@@ -1,0 +1,14 @@
+..... hooks in REACT are simple FUNCTIONS that are INBUILT to react.... HOOKS are functions with PREFIX "USE".... eg: useState, useEffect, useReducer
+
+** HOOKS can ONLY BE DEFINED at TOP LEVEL of the REACT COMPONENT FUNCTION.... i.e BEFORE the RETURN of the COMPONENT FUNCTION 
+
+**** HOOKS CANNOT be DEFINED INSIDE 
+
+  - ANOTHER FUNCTION
+  - IF ELSE STATEMENTS 
+
+  .. etc 
+
+  ** HOOKS SHOULD be DEFINED STAND ALONE at the TOP LEVEL of a COMPONENT FUNCTION  
+
+***** more on hooks later

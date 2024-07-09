@@ -1,0 +1,1 @@
+..... now design a CLEAR LIST BUTTON to clear the list using BUTTON HTML ELEMENT, ON-CLICK ATTRIBUTE and a HANDLE CLEAR FUNCTION (inside the APP COMPONENT) to clear all the listed items when clicked 

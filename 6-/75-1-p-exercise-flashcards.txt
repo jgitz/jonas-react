@@ -1,0 +1,12 @@
+.... take code from the codesandbox link: https://codesandbox.io/s/react-exercise-flashcards-starter-exeteb 
+
+ - aims: 
+  
+  - we need to display flashcards with different QUESTIONS 
+
+  - on the first click on a flashcard should show the answer 
+
+  - on SECOND CLICK on the SAME FLASHCARD should DISAPPEAR the ANSWER and SHOW the QUESTION  
+
+
+***** always try to work with AVAILABLE STATE or VARIABLES instead of CREATING NEW STATE/VARIABLE 

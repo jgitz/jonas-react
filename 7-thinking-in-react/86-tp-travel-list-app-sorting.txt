@@ -1,0 +1,25 @@
+- always CHAIN .SLICE() array method before SORT() as SORT METHOD MUTATES the original array 
+
+- to sort string item ALPHABATICALLY use sort with LOCALA COMPARE FUNCTION like this 
+
+  <array>.sort((a,b) => {
+    return a.localeCompare(b)
+  })
+
+  ** here a and b are items of array which are STRINGS 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.... now we want to sort the items in the list based on ITEM NAME, INPUT ORDER and PACKED STATUS 
+
+- we implement this using ARRAY SORT METHOD 
+
+- create a NEW STATE named ITEM-SORT-OPTION in PACKING LIST COMPONENT to store sort option 
+
+- set sorting option ui using SELECT and OPTION html elements.... SET OPTION VALUES in VALUE ATTRIBUTE of OPTION ELEMENTS..... set VALUE ATTRIBUTE of SELECT OPTION to ITEM-SORT-OPTION STATE..... and use ON-CHANGE attribute on SELECT option to SET OPTION VALUE.... 
+
+- map the the items based on a DERIVED STATE which is an array derived from the ITEMS ARRAY PROP inside the PACKING LIST COMPONENT 
+
+- inside the PACKING LIST COMPONENT..... use 3 SEPARATE IF STATEMENTS to SORT THE ITEMS in the DERIVED STATE ARRAY 
+
+

@@ -1,0 +1,38 @@
+- What is react? 
+
+  - REACT is....
+
+     - DECLARATIVE 
+     - COMPONENT BASED 
+     - STATE DRIVEN 
+
+     .. LIBRARY (NOT FRAMEWORK) 
+
+  ** react was developed in 2011 by a facebook engineer named JORDAN WALKE.... react was made OPEN-SOURCE in 2013
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+- What are FEATURES of REACT? 
+
+  1) COMPONENT BASED: components are the BUILDING BLOCKS of REACT APP... various components are COMBINED to render a web page in react 
+
+    ** COMPONENT: are UI elements with its own DATA, LOGIC and APPEARANCE 
+
+    ** REUSABLITY: components can be REUSED with new set of DATA 
+
+  2) DECLARATIVE: react library is used to DESCRIBE the APPERANCE of the COMPONENt using DECLARATIVE SYNTAX called JSX
+
+    ** VANILLA JS is IMPERATIVE as we've to MANUALLY SET THE UI using DOM MANIPULATION COMMANDS.... BUT in REACT.... the DOM OPERATIONS are ABSTRACTED....
+
+    ** JSX: is a DECLARATIVE SYNTACTIC EXTENSION of JS which allows to combine HTML, CSS, JS as well as REFERENCING OTHER COMPONENTS 
+
+  3) STATE DRIVEN: i.e UI gets RENDERED based on the STATE (...synonymous to DATA) CHANGES.... and whenever the STATE related to a UI gets UPDATED due to events like button click.... the react AUTOMATICALLY RE-RENDERS the UI with UPDATED STATE... 
+
+  4) JAVASCRIPT LIBRARY: a library always only deals with ONE FUNCTIONALITY.... so REACT is a library that only deals with DESIGNING the UI/VIEW 
+
+    ** to add OTHER FUNCTIONALITIES.... you need to install OTHER LIBRARIES 
+
+    ** NEXTJS, REMIX, ANGULAR etc are FRAMEWORKS with INBUILT TOOLS/LIBRARIES for FULLSTACK DEVELOPMENT.... NEXTJS and REMIX are built ON TOP of REACT 
+
+    
+

@@ -1,0 +1,6 @@
+
+- take the code from resources and paste the app.js and index.css in your project
+
+- at first, the ui is all a monolith of html code.... and relevant states inside the app.js 
+
+- we need to split the monolith code into components..... transfer the states to appropriate components.... and use relevant props when required .... split the components inside the app.js itself

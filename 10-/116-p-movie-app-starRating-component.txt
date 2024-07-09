@@ -1,0 +1,3 @@
+... continuation of building star rating component..... a CHILD COMPONENT named STAR is created inside STAR-RATING COMPONENT to render svg with proper FILLED and UNFILLED STAR STYLES....
+
+**** now we've implemented stars filled on clicking on the star and the rating is set.... now we need to modify it such that the star gets filled on HOVERING

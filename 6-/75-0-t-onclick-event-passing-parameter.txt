@@ -1,0 +1,15 @@
+... sometimes we need to PASS DATA from the JSX ELEMENT to ON CLICK HANDLER FUNCTIONS.... this is achieved using the BELOW SYNTAX in the ONCLICK ATTRIBUTE in the JSX ELEMENT 
+
+  <div onClick= {
+    () => {
+       return handleClick(data)
+    }
+  }></div>
+
+  ** and we can use receive the DATA in the HANDLE CLICK FUNCTION as ARGUMENT 
+
+    function handleClick(data) {
+      console.log(data)
+    }
+
+  **** KEEP NOTE in the SYNTAX that we ASSIGN HANDLE CLICK using ANOTHER ARROW FUNCTION... BECAUSE DIRECTLY assigning onClick=handleClick(data) WILL INVOKE the function.... that SHOULDN'T HAPPEN.... hence we WRAP it inside an ARROW FUNCTION 

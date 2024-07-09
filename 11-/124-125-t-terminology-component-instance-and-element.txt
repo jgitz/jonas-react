@@ -1,0 +1,21 @@
+1) COMPONENT: is a simple function that returns a JSX 
+
+2) COMPONENT INSTANCE: whenever a COMPONENT TAG is used MULTIPLE TIMES.... MULTIPLE INSTANCES of the COMPONENT (FUNCTION) is triggered....
+
+  ** each COMPONENT INSTANCEs have SEPARATE LIFECYCLE, STATES and PROPS
+
+  ** you can see COMPONENT INSTANCE DATA in the console by using 
+
+    console.log(<Component Tag/>)
+
+      ** we can see component details such as PROPS OBJECT
+
+3) REACT ELEMENTS: whenever a component is used.... the JSX returned by the component function is CONVERTED to REACT ELEMENT.... 
+
+  - REACT ELEMENT is an IMMUTABLE JS OBJECT in react memory 
+
+    - REACT ELEMENT OBJECT contains ALL the INFORMATION NECESSARY to create the DOM HTML ELEMENT for the COMPONENT INSTANCE 
+
+  - JSX is converted to react element by using React.createElement() function in the backend 
+
+4) DOM ELEMENTS (HTML) : DOM ELEMENTS are the ACTUAL REPRESENTATION of the UI in HTML ELEMENT FORM.... and DOM ELEMENTS are built from the REACT ELEMENT OBJECT DATA

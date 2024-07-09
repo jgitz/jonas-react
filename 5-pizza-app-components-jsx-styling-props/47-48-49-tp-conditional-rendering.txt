@@ -1,0 +1,62 @@
+.... CONDITIONAL RENDERING enables to RENDER UI on the basis of CONDITIONS....
+
+
+.... we can use CONDITIONAL RENDERING using THREE METHODS 
+
+1) SHORT CIRCUITING using && OPERATOR: 
+
+  - syntax 
+
+    <condition> && <component jsx>
+
+    ** the component will render if the CONDITION is TRUE
+
+    **** always use an EXPRESSION which result in TRUE/FALSE as CONDITION.... if we use any EXPRESSION that results in FALSEY VALUE like 0.... then 0 will be rendered 
+
+      ** BOOLEAN TRUE/FALSE WON'T get RENDERED in REACT 
+
+      ** eg consider the below expression 
+
+        <array>.length && <h1><h1>
+
+        ** if array.length is 0 (FALSEY VALUE)... 0 gets RENDERED... which is UNDESIRABLE RESULT 
+
+        ** so the correct approach i 
+
+          <array>.length > 0 && <h1></h1>
+
+          ** now h1 will get rendered if there is epxression is TRUE (when length is GREATER THAN 0) and render NOTHING if array length is 0 as the EXPRESSION becomes FALSE 
+
+2) TERNARY OPERATOR CONDITIONAL RENDERING: we can render COMPONENT using ternary operator 
+
+  - syntax 
+
+    CONDITON ? <component jsx1 > : <component jsx2>
+
+    ** you can give NULL inside ELSE part if you DON'T need to render component2
+
+3) USING IF STATEMENT: EVEN THOUGH a COMPONENT FUNCTION can only have ONE RETURN statement with JSX VIEW..... we can also use ANOTHER RETURN to RETURN ANOTHER JSX VIEW based on a CONDITION using IF STATEMENT BEFORE the RETURN STATEMENT of the COMPONENT FUNCTION
+
+  - for eg: 
+
+    function component() {
+
+      if (CONDITION) {
+        return JSX VIEW 2
+      }
+
+      return (
+        JSX VIEW 1 CODES 
+      )
+    }
+
+    ** here the JSX VIEW 2 gets RENDERED if the CONDITION is MET.... if the CONDITION is NOT MET.... then JSX VIEW 1 is RENDERED
+
+
+    
+
+>>>>>>>>>> p FOOTER COMPONENT >>>>>>>>>>
+
+- generate a footer component to DYNAMICALLY display TEXT based on OPENING and CLOSING HOURS....
+
+- using TERNARY display PIZZA MENU according to PRESENCE of PIZZA's in the PIZZA DATA ARRAY.... if NO DATA is there in the array.... display a PLEASE WAIT TEXT 

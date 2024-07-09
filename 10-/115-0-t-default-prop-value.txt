@@ -1,0 +1,12 @@
+..... sometimes we need to pass a PROP to a COMPONENT FUNCTION with any DEFAULT VALUE.... we can add this default value by using = sign in destructured prop object argument in the component function.... like this....
+
+  <Component prop={prop value}/>
+
+  function Component({prop = <default value>}) {
+    return (
+      <p>prop</p>
+    )
+  }
+
+  ** here if we DON'T use PROP in COMPONENT TAG.... then also the COMPONENT DISPLAYS PROPS with DEFAULT VALUE 
+

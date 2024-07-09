@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // alphabetical sorting of an array using localeCompare method 
+
+      const stringArray = ['Cat', 'catapiller', 'zoo', 'APPLE']
+
+      const sortedArray = stringArray.slice().sort((a,b) => {
+        return a.localeCompare(b)
+      })
+
+      console.log(stringArray)  // [ "Cat", "catapiller", "zoo", "APPLE" ]
+
+      console.log(sortedArray) // [ "APPLE", "Cat", "catapiller", "zoo" ]
+
+      // ***** here sortedArray DIDN'T MUTATE because we used SLICE METHOD to create a duplicate array 
+
+      // ** to sort DESCENDING.... use b.localeCompare(a) method 
+  </script>
+</body>
+</html>

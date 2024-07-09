@@ -1,0 +1,14 @@
+
+
+
+
+
+>>>>>> p >>>>>
+
+.... now we need to tweak the rating component such that 
+
+  - the stars gets filled when we HOVER the pointer above the stars 
+
+  - hover and click on the star to set the rating 
+
+  - once the rating is set..... hovering over the stars should change the rating number temporarily.... and when the pointer is taken outside the rating component.... the original rating should be shown 

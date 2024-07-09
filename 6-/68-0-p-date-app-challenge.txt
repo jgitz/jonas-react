@@ -1,0 +1,5 @@
+... develop a ui based on the IMAGE FILE (next file)....
+
+.... increment the date on pressing + for count 
+
+..... when incrementing the steps using +.... then on pressing + of count.... the increament should happen in multiple of the steps 

@@ -1,0 +1,12 @@
+..... LOADING INDICATOR is a component used to indicate LOADING SCREEN/ICON/TEXT UNTIL the SERVER SENDS DATA to the CLIENT from the API END POINT 
+
+- in the APP COMPONENT.... use IS-LOADING BOOLEAN STATE 
+
+- TOGGLE THE IS-LOADING inside the USE-EFFECT 
+
+- create the LOADER COMPONENT to display loading text 
+
+- set CONDITION to display MOVIE LIST based on IS-LOADING STATE'S VALUE
+
+
+**** use CHROM'S NETWORK TAB to THROTTLE the INTERNET SPEED to 2G/3G/4G to SIMULATE SLOW LOADING of the APPLICATION.... so you can see WORKING of LOADER COMPONENT

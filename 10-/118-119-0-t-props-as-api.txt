@@ -1,0 +1,16 @@
+... PROPS in a component can be considered to be a SORT of API..... 
+
+.... here the COMPONENT FUNCTION is the API END POINT or RECEIVER which receive  DATA FROM THE SENDER in the form of PROP VALUES (..as prop attribute and value in component tags).....
+
+.... and this PROPS VALUE is received in the COMPONENT FUNCTION as DESTRUCTERED PROP OBJECT.... and the PROPS are used in the COMPONENT FUNCTION to RENDER THE UI.....
+
+** we explained the COMPONENTS in terms of API because.... every COMPONENT SHOULD BE MODELLED to be in the FORMAT of API so IT CAN BE USED in OTHER PROJECTS TOO
+
+  ** eg: we'll modify STAR-RATING component such that it can be used OUTSIDE THE PROJECT.... the modificaiton will include addition of props to specify COLOR, FONT-SIZE etc (..later in next note)
+
+** SOME BASIC STANDARDS to FOLLOW on COMPONENTS to model it as API:
+
+  - it's better to have a DEFAULT VALUES assigned to all the DESTRUCTURED PROPS used in the component function 
+
+  - use RIGHT NUMBER of GENERIC PROPS in a component so the component can be reused
+

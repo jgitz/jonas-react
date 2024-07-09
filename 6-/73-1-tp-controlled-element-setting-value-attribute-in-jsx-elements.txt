@@ -1,0 +1,19 @@
+...in order to create a DYNAMIC WEBSITE using react.... we often need to DYNAMICALLY change VALUES of JSX ELEMENTs like INPUT ELEMENT....
+
+.... in VANILLA JS.... the VALUE of a TARGET ELEMENT is stored in DOM..... 
+
+..... BUT in REACT.....we use CONTROLLED ELEMENTS...i.e... the VALUE of a JSX ELEMENT is manipulated using STATES.... it involves THREE STEPS 
+
+  1) inside the COMPONENT FUNCTION we need to create a STATE to store the VALUE we want to add to the JSX ELEMENT 
+
+  2) in the JSX ELEMENT... ASSIGN the STATE VARIABLE to the VALUE ATTRIBUTE
+
+  3) on the JSX ELEMENT.... use "onChange" attribute.... and assign a handler function.... inside use the setState() to set the value to e.target.value...
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+... in the INPUT ELEMENT of the form.... write codes to set INPUT VALUE using USE STATE and ON CHANGE....
+
+... do the same for SELECT JSX ELEMENT....
+  
+**** in the select option e.target.value is NOT NUMBER but STRING NUMBER.... so convert it to NUMBER TYPE USING "Number()"

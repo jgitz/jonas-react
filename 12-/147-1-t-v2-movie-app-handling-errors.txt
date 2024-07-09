@@ -1,0 +1,15 @@
+.... write codes to handle errors that is mentioned in 147-0 
+
+- inside async function  TRY-CATCH-FINALLY block is created
+
+- async function in the USE-EFFECT BLOCK is wrapped in TRY BLOCK 
+
+- added IF CONDITIONS to trigger THROW LINES for the RELEVANT ERRORS 
+
+- NEW STATE VARIABLE named ERROR-MESSAGE is created using USE-STATE HOOK 
+
+- inside CATCH BLOCK ERROR-MESSAGE STATE is SET 
+
+- in APP.JS a NEW COMPONENT named ERROR-MESSAGE is created to RENDER ERROR MESSAGE in the BROWSER.... it takes ERROR-MESSAGE STATE as prop 
+
+- in the FINALLY BLOCK..... IS-LOADING STATE is set to FALSE as it is a MANDATORY CODE.... and SHOULD NOT be stopped EXECUTING it EVEN IF THERE is an ERROR 

@@ -1,0 +1,9 @@
+- SEPERATION OF CONCERN: is a DESIGN PRINCIPLE that advocate to BREAK PROGRAM into DISTINCT SECTIONS 
+
+- SOC IN VANILLA JS WEBSITES: in vanilla js websites.... SOC is implemented by dividing FILES BASED ON TECHNOLOGY.... so the code is divided into SEPARATE files for HTML, CSS and JS 
+
+..... but with RISE OF SPA (Single Page Application).... developers started to use JS to manipulate CSS and HTML.... so in modern world HTML and JS were CLOSELY COUPLED to generate UI..... so to COMBINE HTML and JS into ONE FILE.... REACT uses JSX 
+
+- SOC in REACT: as REACT used JSX.... SOC in react is NOT on the basis of TECHNOLOGY.... SOC in react is based on DIVIDING UI into  SEPARATE COMPONENTS with respect to the APPEARANCE, LOGIC and DATA used in them..
+
+  ** CSS can also be combined with HTML and JS in JSX using STYLED COMPONENTS?? (..later??)

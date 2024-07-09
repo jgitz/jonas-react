@@ -1,0 +1,37 @@
+.... we are going to learn react by working on a project named PIZZA APP....
+
+** the notes related to APP will be in the PIZZA-APP FOLDER
+
+** only GENERIC THEORY NOTES and GENERIC STEPS will be written in this DIRECTORY/FOLDER 
+
+- starting the project... do 
+
+  :: npx create-react-app <app-name>
+
+
+- clean up 
+
+  - delete all the files in the SRC FOLDER 
+
+- in src folder.... 
+
+  - create file named index.js 
+
+- to start the app in browser 
+
+  :: npm start :: 
+
+  **** won't start if there's no index.js on src folder 
+
+- goto SRC/INDEX.JS 
+
+  - import 
+
+    - React from 'react'
+    - ReactDOM from 'react-dom/client'
+
+  -  
+
+
+
+***** app won't start on :: npm start :: if NO INDEX.JS file is added to src folder 

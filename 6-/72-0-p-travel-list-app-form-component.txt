@@ -1,0 +1,16 @@
+.... now design FORM COMPONENT by combining DROPDOWN, INPUT FIELD AND BUTTON 
+
+- inside form component function 
+
+  - create form tag 
+
+
+    - inside form tag 
+
+      - create select tag 
+
+        - we need 20 numbers as dropdown using OPTION TAG..... we create it DYNAMICALLY by using ARRAY.FROM METHOD 
+
+      - create INPUT TAG to input item names 
+
+      - create ADD BUTTON using button element 

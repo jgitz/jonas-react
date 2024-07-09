@@ -1,0 +1,16 @@
+.... now in the project we want to create an app component....
+
+** we can EITHER CREATE a separate APP.JS file in src folder.... OR WRITE APP COMPONENT FUNCTION inside the INDEX.JS ITSELF 
+
+  **** we are writing APP FUNCTION inside the INDEX.JS FOLDER 
+
+
+- to create APP COMPOENENT inside index.js.... goto index.js 
+
+  - write function named APP with a demo return 
+
+  **naming convention of FUNCTIONAL COMPONENT FILES as well as FUNCTION NAMES is PASCAL CASE
+
+  ** the FUNCTIONAL COMPONENTS are JSX FILES.... hence.... if there are BLOCKS of CODES as return of a function.... they are WRAPPED IN () INSTEAD OF {}.... because it's the JSX SYNTAX 
+
+   

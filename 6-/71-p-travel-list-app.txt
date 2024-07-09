@@ -1,0 +1,7 @@
+.... now we need to DEVELOP and RENDER ITEM COMPONENT 
+
+- use the COMMENTED DATA ARRAY from INDEX.CSS to develop items 
+
+- inside PACKED LIST COMPONENT..... specify ITEM COMPONENT JS using array.map and also with ITEM PROP 
+
+- develop ITEM COMPONENT FUNCTION.... also CONDITIONALLY render the STRIKE-THROUGH style if the item is PACKED (I.E item.packed value is TRUE)

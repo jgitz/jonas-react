@@ -1,0 +1,33 @@
+.... till now we used STATIC DATA to render the move.....
+
+.... now we are going to use API calls to FREE MOVIE API ENDPOINT to obtain movie data....
+
+  - FREE MOVIE API SITE: www.omdbapi.com 
+
+      - click on FREE API KEY 
+
+        - FILL FORM WITH EMAIL DETAILS 
+
+        - you'll get API KEY in the MAIL
+
+        - use the LINK in the EMAIL to activate 
+
+      - to from the USAGE SECTION in the site you need to use the URL in the FETCH REQUEST in the below format 
+
+        http://www.omdbapi.com/?apikey=[yourkey]&
+
+- to CONNECT MOVIE APP to API to FETCH DATA
+
+  - IN THE APP.JS before the APP COMPONENT.... use CONST VARIABLE to store the KEY like below 
+
+    const KEY = '78d210c9'
+
+
+  - in the app.js... INSIDE APP COMPONENT use fetch method like below 
+
+    fetch(`http://www.omdbapi.com/?apikey=${KEY}&s=interstellar`)
+    .then(res => res.json())
+    .then(data => console.log(data) )
+
+      ** the s= part is obtained from the API DOC 
+

@@ -1,0 +1,4 @@
+..... using starter file from https://codesandbox.io/s/react-exercise-accordion-starter-q9rczr
+ 
+
+... build an accordion component which asks a FAQ QUESTION and lists answer in a DROPDOWN when CLICKED

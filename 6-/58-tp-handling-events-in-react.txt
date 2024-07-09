@@ -1,0 +1,27 @@
+.... in vanilla js we use EVENT LISTNERS to listen for events and apply changes.....this is IMPERATIVE WAY....
+
+.... in react WE USE DECLARATIVE way to add events to a JSX ELEMENT.... without selecting DOM ELEMENTS using DOM METHODS.....
+
+- to add EVENTS to an ELEMENT in REACT..... 
+
+  1) write the CODES you want to execute at the event BEFORE THE FUNCTION RETURN as a HANDLER FUNCTION 
+
+    ** NAMING CONVENTION of HANDLER FUNCTION is to add "HANDLE" SUFFIX
+
+      eg function handleClick() {
+        <codes>
+      }
+
+  2) use EVENT ATTRIBUTES DIRECTLY INSIDE the TARGET JSX ELEMENT..... and assign the HANDLER FUNCTION to it 
+
+    - for eg... to use onclick event use the attribute onClick on the JSX ELEMENT
+
+      <button onClick={<handleClick>}></button>
+
+      **** DON'T INVOKE the handler functions using ()
+
+>>>>>>>>>>>>>>>>>p steps app>>>>>>>>>>>
+
+- create handle functions for NEXT and PREVIOUS BUTTON using onClick attribute 
+
+- assign onClick attribute to handler functions on the  BUTTON JSX ELEMENTS 

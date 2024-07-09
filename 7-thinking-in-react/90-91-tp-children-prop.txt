@@ -1,0 +1,27 @@
+.... sometimes REUSABILITY becomes very difficult we pass DATA as PROPS.... passing props expects all the data received by the child component of the SAME CONTENT STRUCTURE.... so if we want data with different CONTENT STRUCTURE.... we use CHILDREN PROP 
+
+- CHILDREN PROP: is a IN-BUILT PROP received by all the components..... it can be accessed using props.children in the PROPS OBJECT....
+
+  - CHILDREN PROP: can be used to pass in any data including JSX.... but has to follow the FOLLOWING STEPS to USE it 
+
+    - STEP 1: PASS IN CHILDREN PROP into the child component from the parent component.... but the child component should be of the format <Child>children prop content</Child>.... for eg 
+
+      function ParentComponent() {
+        return (
+          <Child> Content to be passed as prop is specified here </Child>
+        )
+      }
+
+    - STEP 2: RECEIVE CHILDREN PROP in the CHILD COMPONENT FUNCTION and USE it 
+
+      function ChildComponent({children}) {
+        return (
+          <h1> {children} </h1>
+        )
+      }
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+90-91
+** DIDN'T DO 
+
+... in 57-p-steps app.... you need to use CHILDREN PROP METHOD to define buttons as a SEPARATE COMPONENT....

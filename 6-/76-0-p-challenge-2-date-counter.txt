@@ -1,0 +1,9 @@
+.... we need to work on already created previous challenge named DATE APP... 
+
+- aim 
+
+  - in the STEPS.. we need to replace buttons with a SLIDER ( html input element type rage) to set the STEPS 
+
+  - now on the COUNT SECTION.... we should be able to WRITE NUMBER OF DAYS and the DATE corresponding to the number of days should be displayed 
+
+  - we need a RESET BUTTON to reset COUNT and STEPS.... RESET BUTTON should CONDITIONALLY RENDER only if the COUNT or STEP is CHANGED 

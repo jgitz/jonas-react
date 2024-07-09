@@ -1,0 +1,40 @@
+- FRAMEWORKS: is a COMPLETE PACKAGE that includes every tool that you need to build a web application
+
+  - FRAMEWORKS include tools for implementing features like 
+
+    - http request handling
+
+    - routing 
+
+    - styling 
+
+    - form management ??
+
+    - etc 
+
+  - example for frameworks:
+
+    - VUE 
+    - ANGULAR 
+    - SVELTE 
+
+    - NEXT JS (REACT BASED)
+    - REMIX (REACT BASED)
+    - GATSBY 
+
+  ** DISADVANTAGES:
+
+    - developers are stuck with TOOLS and CONVENTIONS of the framework
+
+- LIBRARIES: are package of code which only does ONE FUNCTION 
+
+  - REACT is a VIEW LIBRARY to RENDER VIEWS... for any other features.... we need to add SEPARATE LIBRARIES
+
+  - ADVANTAGES:
+
+    - freedom to choose libraries you like
+
+  - DISADVANTAGES: 
+
+    - difficult to learn all libraries and keeping up with the UPDATES happening on the libraries used
+

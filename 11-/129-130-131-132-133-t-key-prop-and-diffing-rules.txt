@@ -1,0 +1,33 @@
+.... the DIFFING ALGORITHM FOLLOWS SOME RULES during COMPARISON OPERATION in the RECONCILIATION PROCESS 
+
+1) if the HTML TAGS or COMPONENTS are DIFFERENT in the SAME POSITION during comparison of current fiber tree and the virtual dom
+
+  -here the DIFFING ALGORITHM WILL REMOVE entire COMPONENT/HTML ELEMENT... ALONG WITH THEIR CHILDREN and STATE VALUE in ANY COMPONENT TAG is ENTIRELY REMOVED 
+
+    - for example.... consider the current fiber has a DIV TAG wrapping a <Search/> COMPONENT.... and the NEW VIRTUAL DOM has HEADER TAG instead of DIV TAG WRAPPING the SAME <Search/> component.... then both DIV TAG and <Search/> COMPONENT is REMOVED.... along with the STATE VALUES of the <Search/> component....
+
+2) if the HTML TAGS or COMPONENTS are DIFFERENT in the SAME POSITION.... with DIFFERENT PROPS and CLASS ATTRIBUTES added to the COMPONENT TAGS and HTML TAGS RESPECTIVELY.. during comparison of current fiber tree and the virtual dom....
+
+  - here the DIFFING ALGORITHM... DOESNOT REMOVE the COMPONENT TAG or the HTML ELEMENT.... 
+
+  - diffing algorithm will PRESERVE BOTH COMPONENT/HTML TAGs ALONG WITH THEIR STATES 
+
+  - PROPS/HTML ATTRIBUTES and their VALUES are SIMPLY ADDED to the PRESERVED COMPONENT/HTML TAGS  
+
+3) if HTML TAGS or COMPONENTS has KEY PROP with UNIQUE VALUES 
+
+  - if the KEY PROP VALUE remains the SAME between CURRENT FIBER TREE and NEW VIRTUAL DOM...the DIFFING ALGORITHM PERSISTS the HTML ELEMENT/COMPONENT
+
+    ** EVEN IF the POSITION of the ELEMENT/COMPONENT CHANGES.... they are PERSISTED
+
+  - if the KEY PROP VALUE is DIFFERENT  between CURRENT FIBER TREE and NEW VIRTUAL DOM.... the DIFFING ALGORITHM DESTROYS the ELEMENT/COMPONENT....
+
+    ** EVEN IF the POSITION of the ELEMENT/COMPONENT remains the SAME.... THEY ARE DESTROYED if the  KEY VALUE CHANGES between the renders
+
+    ** the STATE associated with the ELEMENT/COMPONENT also GETS DESTROYED 
+
+    ** USE CASE: 
+    
+      - KEY PROP is used to RESET STATE 
+
+      - KEY PROP is used if you want to LIST MULTIPLE COMPONENTS of the SAME TYPE  

@@ -1,0 +1,21 @@
+... Primary debugging if NO UPDATES are made to UI ARE 
+
+1) check if the APP is RUNNING in the TERMINAL 
+
+2) RELOAD the browser as AUTOMATIC UPDATES (aka HOT MODULE REPLACEMENT) can FAIL at times 
+
+3) check for ESLINT ERROR UNDERLINES in the witten CODE  
+
+  ** ESLINT ERRORS will be displayed in PROBLEM TAB of the VSCODE INTEGRATED TERMINAL 
+
+  ** ESLINT is ENABLED by DEFAULT in CREATE-REACT-APP 
+
+4) sometimes the code WON'T run if there is any error in EXTENSIONS used such as PRETTIER, ESLINT etc.... to check for errors in EXTENSION TASKS.... 
+
+  - open OUTPUT TAB of VSCODE INTEGRATED TERMINAL
+
+  - select EXTENSION NAME from the dropdown 
+
+  ** scroll through the terminal and check for any error 
+
+**** more debugging using REACT DEV TOOLS will be discussed later 

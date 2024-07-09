@@ -1,0 +1,21 @@
+... there are TWO TYPES of state....
+
+  1) LOCAL STATE: 
+
+    - state needed by only ONE or FEW COMPONENTS 
+
+    - local state is defined inside the COMPONENT that uses the STATE.... the CHILD COMPONENTS can also access the state through PROPS 
+
+    - ALWAYS start with using LOCAL STATE.... and MOVE it to GLOBAL STATE only when needed 
+
+  2) GLOBAL STATE: 
+
+    - state that is needed by MANY COMPONENTS 
+
+    - this state should be accessible to EVERY COMPONENT in the application 
+
+    - two popular tools used to create and manage  GLOBAL STATES are 
+
+      1) CONTEXT API 
+
+      2) REDUX 

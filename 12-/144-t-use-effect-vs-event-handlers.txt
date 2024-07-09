@@ -1,0 +1,22 @@
+.....TWO COMMON PLACES which are used IN REACT to ISOLATE SIDE-EFFECTS are 
+
+  1) EVENT HANDLER FUNCTIONS 
+
+  2) USE-EFFECT HOOK 
+
+  ***** EVENT HANDLER FUNCTIONS are the MOST-PREFERRED way to make SIDE-EFFECTS in react... and DON'T OVER-USE USE-EFFECT HOOK
+
+- DIFFERENCE BETWEEN EVENT-HANDLERS and USE-EFFECT HOOK 
+
+  * EVENT HANDLER are  simple HANDLER FUNCTIONS ASSIGNED to EVENT PROPS such as onClick, onSubmit, onChange..... these functions hold codes that create SIDE-EFFECTS.... and this functions are ONLY INVOKED when the EVENT is TRIGGERED... eg BUTTON CLICK 
+
+      ** USE-EFFECT hook is used to SYNCHRONIZE the COMPONENT with some EXTERNAL SYSTEM.... eg to sync with API DATA
+
+      
+  * EVENT HANDLER only gets activated when the EVENT is TRIGGERED 
+
+      ** USE-EFFECT hook gets activated and runs the EFFECT FUNCTION on the INITIAL COMPONENT MOUNT PHASE as well as on RE-RENDERS (..if there are items in the DEPENDENCY ARRAY)....
+
+  * EVENT HANDLER use is the most PREFEREED WAY to handle SIDE-EFFECTS in react 
+
+      ** USE-EFFECT hooks SHOULD NOT be OVERUSED 

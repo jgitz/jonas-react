@@ -1,0 +1,15 @@
+- REACT STRICT MODE: is a WRAPPER COMPONENT provided by react to use on the time of APP DEVELOPMENT to FIND BUGS 
+
+  ** as a SIDEFFECT of strict mode.... the react app will RENDER TWICE at the reload to find BUGS 
+
+- to add strict mode to the APP COMPONENT 
+
+  - goto src/index.js 
+
+    - modify root.render code and wrap the <App/> component using <React.StrictMode></React.StrictMode> like below 
+
+      root.render(
+        <React.StrictMode>
+          <App/>
+        </React.StrictMode>
+      )

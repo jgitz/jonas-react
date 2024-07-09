@@ -1,0 +1,1 @@
+.. if error comes up when using props with error message "not valid object"..... remove any {} wrapping on the props

@@ -1,0 +1,1 @@
+.... the codes in FOOTER is a bit LONG.... so CUT IT and MAKE is as a SEPARATE ORDER COMPONENT.... and then use it inside the FOOTER 

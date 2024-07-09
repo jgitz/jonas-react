@@ -1,0 +1,29 @@
+.... this project is where we create a LIST to pack the ITEMS in the travel bag before starting the trip 
+
+- NEEDED FEATURES 
+
+  - 2 inputs to add ITEM NAME and the NUMBER of that items you want to pack 
+
+  - add button to add the item 
+
+  - added items should be displayed with a CHECK BOX and a CLOSE BUTTON.... 
+
+  - when the item is packed... we click CHECK BOX... that'll STRIKE OFF (... not deleting... instead a strike off line is displayed on the item name) the item from the list.... CLOSE BUTTON will REMOVE the item from the LIST 
+
+  - SORTING OPTIONS with various options 
+
+  - CLEAR LIST BUTTON to clear the list for a new journey 
+
+  - at the end of the app... there should be a line that says the number of items added
+  
+>>>>>>> app compoent break up 
+
+- LOGO COMPONENT: top most section where LOGO and APP NAME is placed 
+
+- FORM COMPONENT: below logo component to add the ITEM and the NUMBER.... it also has ADD BUTTON 
+
+- PACKING LIST COMPONENT: is the BIG AREA where ADDED ITEMS are listed... it also has SORTING OPTIONS and CLEAR LIST BUTTON 
+
+- ITEM COMPONENT: this component is each ITEM in the PACKING LIST COMPONENT... it has a CHECK BOX and CLOSE BUTTON 
+
+- STATS COMPONENT: bottom most COMPONENT which displays PACKING STATS

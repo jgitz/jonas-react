@@ -1,0 +1,9 @@
+- STATE MANAGEMENT: means managing various aspects of STATES such as: 
+
+  - WHEN to CREATE states
+
+  - WHAT TYPE of STATES are necessary 
+
+  - WHERE to place each piece of state 
+
+  - HOW DATA FLOWS through the app 

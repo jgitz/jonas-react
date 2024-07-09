@@ -1,0 +1,9 @@
+.... when you need to handle DATA to MANIPULATE UI.... you can use the the following DATA MANIPULATION ways according to various SCENARIOUS GIVEN BELOW 
+
+  - use CONST VARIABLE: when the DATA you use WON'T CHANGE in the app lifecycle 
+
+  - USE DERIVE STATE(.. later ): when you need DATA to be COMPUTED from EXISTING STATES/PROPS (.. derived states are assigned to CONST VARIABLES in MOST CASES)
+
+  - use useRef (later): if you DON'T WANT the data to RE-RENDER the component 
+
+  - use useState: if you want the data to RE-RENDER the component

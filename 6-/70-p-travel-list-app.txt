@@ -1,0 +1,19 @@
+.... project LAYOUT has to be set.... use INDEX.CSS codes from the RESOURCES FOLDER 
+
+
+- create App component function inside App.js 
+
+- inside the App.js.... create the COMPONENT FUNCTIONS for the following COMPONENTS 
+
+  - LOGO COMPONENT 
+  - FORM COMPONENT 
+  - PACKING LIST COMPONENT 
+  - STATS COMPONENT 
+
+  ** use relevant css classes from INDEX.CSS
+
+  ***** we'll separate components into INDIVIDUAL COMPONENT FILES LATER 
+
+- now to create layout by listing the ABOVE component JSX inside the APP COMPONENT FUNCTION RETURN 
+
+  

@@ -1,0 +1,3 @@
+... in accordion exercise project.... use CHILDREN PROP to pass in the CONTENT.... so delete the CONTENT PROP and use CHILDREN PROP
+
+... also add another CUSTOM ACCORDION ITEM which DON'T TAKE VALUE FROM THE FAQ ARRAY....

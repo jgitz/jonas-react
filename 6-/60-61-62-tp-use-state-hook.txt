@@ -1,0 +1,50 @@
+- USE STATE HOOK: is used to store data inside STATE VARIABLE inside the COMPONENT 
+
+  ** USE STATE HOOK  is a FUNCTION that RETURN and ARRAY with TWO ITEMS...
+
+    1) STATE VALUE: current data stored in the state variable
+
+    2) SETTER function: to set NEW DATA to the state variable 
+
+  ** SYNTAX eg 
+
+    const [<state>, <setState>] = useState(<initial value>)
+
+
+      - initial value is the default value you want to have inside the state variable 
+
+      - setState() function can be used ANYWHERE to set NEW VALUE to the state variable like this 
+
+        setState(<new value>) 
+
+      **** useState hook can ONLY be DEFINED at TOP LEVEL (before the return) of the COMPONENT FUNCTION.... it CANNOT BE DEFINED INSIDE....
+
+        - other FUNCTIONS 
+
+        - inside IF ELSE statements etc
+
+      **** always USE SETTER FUNCTION to UPDATE the state and DON'T DIRECTLY change value of the STATE VARIABLE.... REACT DON'T know how to update a state variable without using the SETTER FUNCTION....
+
+**** whenever a state variable is UPDATED..... the REACT RE-RENDERS the component... I.E it RE EXECUTES the COMPONENT FUNCTION.... and the NEW STATE DATA is added to the STATE VARIABLE and the COMPONENT UI is UPDATED with the required data
+
+>>>>>>>>>>>>>>>> 65 t updating based on current and previous state in USE STATE HOOK>>>>>>>>>>
+
+- USE STATE SETTER FUNCTION BEST PRACTICE:
+
+  - while using setter function to update STATES.... DON'T use the CURRENT STATE VALUE DIRECTLY.... instead use CURRENT STATE VALUE using a CALLBACK FUNCTION inside the SETTER FUNCTION
+
+    - syntax 
+
+      setState((state) => {
+        return codes to update the state
+      })
+
+        ** state argument can be NAMED ANYTHING 
+
+        **** DON'T use the callback function witout the RETURN... else error 
+
+>>>>>>>>>>>>>>>>>>> 60 steps app >>>>>>>>
+
+- use USE STATE to define steps 
+
+- set STEP VARIABLE inside HANDLER FUNCTIONS

@@ -1,0 +1,29 @@
+.... building web app in react is different from building it in vanilla js.... hence we've to approach differently inorder to develop UI using REACT 
+
+- STEPS involved in THINKING IN REACT: 
+
+  1) BREAK UI into COMPONENT and develop COMPONENT TREE  to set RELATIONSHIP b/w the components
+
+    - how to make COMPONENTS REUSABLE 
+
+    - how to ASSEBLE components to form UI 
+
+  2) build web app with STATIC CODES using DUMMY DATA and NOT USING any STATES.. 
+
+  3) STATE MANAGEMENT: 
+
+    - Think about USING of STATES: 
+
+      - WHERE to use STATES 
+
+      - WHICH TYPE of STATE should be used.... LOCAL or GLOBAL tates 
+
+      - WHERE to PLACE states 
+
+    - ESTABLISH DATA FLOW: 
+
+      - WHEN to use ONE-WAY DATA FLOW (parent-to child component)
+
+      - HOW to establish CHILD TO PARENT COMMUNICATION 
+
+      - HOW to ACCESS GLOBAL STATE 
